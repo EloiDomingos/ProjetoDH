@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;	
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+	padding: 0;
+}
+
+html {
+	height:100%;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+/*PARTE PRETA*/
+header .containerBlack{
+    background-color: #454956;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px;
+}
+header .logo h1{
+    font-family: 'Yanone Kaffeesatz';
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    padding: 42px 0px;
+}
+header .botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.botoes button{
+    border: none;
+    border-radius: 8px;
+    background-color: #EF8408;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+header .botoes img{
+    margin-left:15px;
+    width: 8%;
+    filter: invert(84%) sepia(25%) saturate(930%) hue-rotate(347deg) brightness(103%) contrast(102%);
+}
+
+/*PARTE AZUL*/
+header .containerBlue{
+    background-color: #1C6CB2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 32px;
+}
+nav ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+    gap: 32px;
+}
+
+nav ul li{
+	text-decoration: none;
+	color: #FFF;
+    font-size: 1.3rem;
+}
+
+article .buscador{
+    display: flex;
+}
+
+.buscador button{
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #EF8408;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px;
+    padding: 6px 18px;
+}
+.buscador input{
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    margin: 0px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+/*Fim do header*/
+
+.banner1 img{
+	height: 350px;
+	width: 100%;
+	padding: 35px;
+    object-fit: cover;
+    object-position: 50% 55%;
+}
+
+/*PRODUTOS card*/
+
+article.produtos{
+	margin: 0px 35px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article .card{
+	width: 260px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.produtoIMG{
+    height: 260px;
+}
+.produtoIMG img{
+	height: 100%;
+	width: 260px;
+    object-fit: cover;
+}
+
+.infoProd{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 10px;
+}
+
+article .nomeC{
+    border-bottom: #8F8169 solid 3px;
+}
+
+.infoProd p{
+    padding: 20px;
+}
+.infoProd button{
+    border: none;
+    border-radius: 8px;
+    background-color: #EF8408;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px;
+    padding: 6px 18px;
+}
+
+/*FIM DOS PRODUTOS*/
+.Promo{
+    position: relative;
+    padding: 35px;
+}
+.Promo img {
+	height: 350px;
+	width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.Promo p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #393A3B;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+/*Início do Footer*/
+footer{
+    background-color: #454956;
+	display: flex;
+	flex-direction: row;
+    padding: 25px 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .mapa{
+    margin: 0;
+}
+
+footer .mapa img{
+    height: 300px;
+	width: 560px;
+	border-radius: 8px;
+    object-fit: cover;
+}
+
+footer .footInfo{
+	color: white;
+}
+
+footer .footInfo h3{
+    font-size: 2rem;
+}
+
+footer .footInfo p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2;
+    width: 400px;
+}
