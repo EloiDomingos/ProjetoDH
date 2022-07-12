@@ -1,73 +1,124 @@
 @import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300 & family= Rajdhani:wght@300;500 & display=swap');
 * {
-    padding: 0;
+    box-sizing: border-box;	
+    font-family: 'Josefin Sans', sans-serif;
     margin: 0;
-    box-sizing: border-box;
-    font-family: "inter", sans-serif;
+	padding: 0;
+    
+}
+
+html {
+	height:100%;
 }
 
 body{
     
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #F5F5F5;
+    margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+    
 }
 
-
-/*
-.form {
+header{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
+}
+
+/*PARTE PRETA*/
+header .containerBlack{
+    background-color: #454956;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px 32px;
+}
+header .logo h1{
+    font-family: 'Yanone Kaffeesatz';
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    padding: 42px 0px;
+}
+header .botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.botoes button{
+    border: none;
+    border-radius: 8px;
+    background-color: #EF8408;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+header .botoes img{
+    margin-left:15px;
+    width: 8%;
+    filter: invert(84%) sepia(25%) saturate(930%) hue-rotate(347deg) brightness(103%) contrast(102%);
 }
 
-.form-header title h1 {
-display: flex;
-align-items: center;    
-width: 584px;
-height: 58px;
-left: 349px;
-top: 408px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 58px;
-
-
-
-color: #000000;
+/*PARTE AZUL*/
+header .containerBlue{
+    background-color: #1C6CB2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 32px;
+}
+nav ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+    gap: 32px;
 }
 
-.form-header title2 h2 {
-    position: absolute;
-width: 310px;
-height: 48px;
-left: 486px;
-top: 511px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 48px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #000000;
+nav ul li{
+	text-decoration: none;
+	color: #FFF;
+    font-size: 1.3rem;
 }
-*/
+
+article .buscador{
+    display: flex;
+}
+
+.buscador button{
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #EF8408;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px;
+    padding: 6px 18px;
+}
+.buscador input{
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    margin: 0px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+/*Fim do header*/
+
+
+
 .principal{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     
 }
 
@@ -80,16 +131,18 @@ color: #000000;
 }
 
 .titles {
-    background-color: #EF8408;
+    
+    margin-top: 30px;
+    
     
     
     
 }
 
 
-.input-group{
+.inicioform{
     box-sizing: border-box;
-    position:absolute;
+    /*position:absolute;*/    
     padding-left: 50px;
     width: 887px;
     height: 942px;
@@ -100,9 +153,14 @@ color: #000000;
     justify-content: space-around;
     align-content: flex-start;
     justify-items: center;
-    align-items: flex-start;
+    align-items: center;
+    
+}
+
+.input-group{
     border: 1px solid #8F8169;
     border-radius: 18px;
+    padding: 10px;
 }
 
 .input-nome label {
@@ -117,6 +175,7 @@ color: #000000;
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    
 }
 .input-nome input {
     margin-top:15px ;
@@ -264,17 +323,17 @@ color: #000000;
 }
 
 .avancar-boton{
-    position: absolute;
+    /*position: absolute;*/
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 17px 75px;
     gap: 10px;
-    position: absolute;
+    
     width: 302px;
     height: 82px;
     left: 490px;
-    top: 1591px;
+    /*top: 1591px;*/
     background: #EF8408;
     border-radius: 18px;
 }
@@ -287,9 +346,45 @@ color: #000000;
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
+    text-decoration: none;
     color: #FFFFFF;
-    flex: none;
+    /*flex: none;
     order: 0;
-    flex-grow: 0;
+    flex-grow: 0;*/
     
+}
+
+footer{
+    background-color: #454956;
+	display: flex;
+	flex-direction: row;
+    padding: 25px 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .mapa{
+    margin: 0;
+}
+
+footer .mapa img{
+    height: 300px;
+	width: 560px;
+	border-radius: 8px;
+    object-fit: cover;
+}
+
+footer .footInfo{
+	color: white;
+}
+
+footer .footInfo h3{
+    font-size: 2rem;
+}
+
+footer .footInfo p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2;
+    width: 400px;
 }
