@@ -226,3 +226,104 @@ footer .footInfo p{
     line-height: 2;
     width: 400px;
 }
+
+
+@media (max-width: 942px){
+    /*mobile*/
+    
+    header .containerBlack .logo{
+        width: 100vh;
+    }
+
+    header .containerBlack {
+        padding: 0px 20px;
+    }
+
+    .botoes button{
+        font-size: 1.4rem;
+        padding: 14px 20px;
+    }
+
+    header .botoes img{
+        width: 23%;
+    }
+
+    header .containerBlue{
+        display:none;
+    }
+
+    .banner1{
+        display: none;
+    }
+    
+    .primeiralinha {
+        display: none;
+    }
+    
+    article.produtos{
+        padding: 10px 16px;
+        margin: 0px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        gap: 30px;
+    }
+    
+    article .card{
+        width: 100%;
+        border-radius: 8px;
+        border: #8F8169 2px solid;
+    }
+
+    .produtoIMG {
+        height: 210px;
+    }
+
+    .produtoIMG img{
+        height: 210px;
+        width: 100%;
+        border-radius: 6px 6px 0px 0px;
+    }
+
+    .infoProd {
+        width: 100%;
+    }
+    
+    .infoProd p{
+        padding: 15px;
+        font-size: 1.7rem;
+    }
+
+    .infoProd button{
+        font-size: 2rem;
+        padding: 18px;
+        width: 100%;
+    }
+
+    .Promo{
+        padding: 10px 16px;
+        height: 125px;
+    }
+
+    .Promo img{
+        height: 100%;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+
+    footer .mapa {
+        display: none;
+    }
+
+    footer .footInfo h3{
+        font-size: 2rem;
+    }
+    
+    footer .footInfo p{
+        font-size: 1.2rem;
+        width: fit-content;
+        font-weight: normal;
+    }
+}
