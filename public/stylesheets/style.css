@@ -7,11 +7,6 @@
 	padding: 0;
 }
 
-article.produtos {}
-
-article.produtos {}
-
-
 html {
 	height:100%;
 }
@@ -119,88 +114,7 @@ article .buscador{
 
 /*Fim do header*/
 
-.banner1 img{
-	height: 350px;
-	width: 100%;
-	padding: 35px;
-    object-fit: cover;
-    object-position: 50% 55%;
-}
-
-/*PRODUTOS*/
-
-article.produtos{
-	margin: 0px 35px 35px;
-    display: flex;
-    justify-content: space-between;
-}
-
-article .card{
-	width: 260px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.produtoIMG{
-    height: 260px;
-}
-.produtoIMG img{
-	height: 100%;
-	width: 260px;
-    object-fit: cover;
-}
-
-.infoProd{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    font-size: 1.3rem;
-    font-weight: 400;
-    padding: 10px;
-}
-
-article .nomeC{
-    border-bottom: #8F8169 solid 3px;
-}
-
-.infoProd p{
-    padding: 20px;
-}
-.infoProd button{
-    border: none;
-    border-radius: 8px;
-    background-color: #EF8408;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
-    text-decoration: none;
-    margin: 0px;
-    padding: 6px 18px;
-}
-
-/*FIM DOS PRODUTOS*/
-.Promo{
-    position: relative;
-    padding: 35px;
-}
-.Promo img {
-	height: 350px;
-	width: 100%;
-    object-fit: cover;
-    opacity: 0.6;
-}
-.Promo p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #393A3B;
-    font-size: 3rem;
-    font-weight: bolder;
-}
-
-/*InÃ­cio do Footer*/
+/*Ini­cio do Footer*/
 footer{
     background-color: #454956;
 	display: flex;
@@ -235,31 +149,25 @@ footer .footInfo p{
     line-height: 2;
     width: 400px;
 }
+
 /*CSS CARRINHO*/
 
 .tituloCarrinho{
-    box-sizing: border-box;
-    border: #8F8169 solid;    
-    left: 104px;
-    top: 484px;
-    font-family: 'Inter';
-    font-style: normal;
+    border: #8F8169 solid 2px;    
     font-weight: 700;
     font-size: 48px;
-    line-height: 58px;
-    text-align: center;
     border-radius: 8px;
     margin: 10px;
+    padding: 32px 0px 32px 32px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .infoProduto{
-    border: #8F8169 solid 3px;
+    border: #8F8169 solid 2px;
     border-radius: 8px;
     margin: 10px;
     display: flex;
 }
-
-
 
 .carrinho img{
     width: 250px;
@@ -268,7 +176,6 @@ footer .footInfo p{
 }
 
 .carrinho {
-    box-sizing: border-box;
     display: flex;
     font-weight: 400;
     font-size: 36px;
@@ -278,22 +185,17 @@ footer .footInfo p{
     margin-left: 30px;
     margin-right: 10px;
     justify-content: space-between;
-    padding: ;
     border-radius: 8px;
 }
 
 .totalCarrinho{
-    box-sizing: border-box;
-    border: #8F8169 solid;
+    border: #8F8169 2px solid;
     height: 300px;
     width: 400px;
-    font-weight: 600;
     font-size: 40px;
     line-height: 58px;
     padding: 15px;
     border-radius: 8px;
     margin: 10px;
 }
-
-
 

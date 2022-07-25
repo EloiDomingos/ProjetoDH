@@ -127,49 +127,36 @@ article .buscador{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-       
-}
-
-.titles {
-    
-    margin-top: 30px;
-    
-    
-    
-    
+    padding: 20px;
+    line-height: 1.7;
 }
 
 
 .inicioform{
-    box-sizing: border-box;
-    /*position:absolute;*/    
-    padding-left: 50px;
-    width: 887px;
-    height: 942px;
-    left: 197px;
-    top: 604px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: flex-start;
     justify-items: center;
     align-items: center;
-    
 }
 
 .input-group{
     border: 1px solid #8F8169;
     border-radius: 18px;
-    padding: 10px;
+    padding: 25px 20px;
 }
 
-.input-nome label {
+.inputs {
+    padding: 24px 0px;
+}
+
+.inputs label {
     
     width: 187px;
     height: 29px;
     left: 245px;
     top: 647px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -177,165 +164,27 @@ article .buscador{
     color: #000000;
     
 }
-.input-nome input {
-    margin-top:15px ;
-    box-sizing: border-box;
+.inputs input {
     display: flex;
-    flex-direction: column;
     width: 792px;
-    height: 68px;
-    left: 245px;
-    top: 700px;
+    height: 42px;
     border: 1px solid #8F8169;
-    border-radius: 18px;
-}
-
-
-.input-dtnasc label {
-    width: 233px;
-    height: 29px;
-    left: 245px;
-    top: 792px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
-
-.input-dtnasc input {
-    margin-top:15px ;
-    box-sizing: border-box;
-    width: 233px;
-    height: 68px;
-    left: 245px;
-    top: 845px;
-    border: 1px solid #8F8169;
-    border-radius: 18px;
-}
-
-.input-cpf label {
-    margin-top:15px ;
-    width: 54px;
-    height: 29px;
-    left: 245px;
-    top: 937px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
-
-.input-cpf input {
-    margin-top:15px ;
-    box-sizing: border-box;
-    width: 451px;
-    height: 68px;
-    left: 245px;
-    top: 990px;
-    border: 1px solid #8F8169;
-    border-radius: 18px;
-}
-
-.input-cel label {
-    width: 105px;
-    height: 29px;
-    left: 245px;
-    top: 1082px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
-
-.input-cel input {
-    margin-top:15px ;
-    box-sizing: border-box;
-    width: 451px;
-    height: 68px;
-    left: 245px;
-    top: 1135px;
-    border: 1px solid #8F8169;
-    border-radius: 18px;
-}
-
-.input-email label {
-    width: 78px;
-    height: 29px;
-    left: 245px;
-    top: 1227px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
-
-.input-email input {
-    margin-top:15px ;
-    box-sizing: border-box;
-    width: 792px;
-    height: 68px;
-    left: 245px;
-    top: 1280px;
-    border: 1px solid #8F8169;
-    border-radius: 18px;
-}
-
-.input-senha label {
-    width: 78px;
-    height: 29px;
-    left: 245px;
-    top: 1372px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
-
-.input-senha input {
-    margin-top:15px ;
-    box-sizing: border-box;
-    width: 792px;
-    height: 68px;
-    left: 245px;
-    top: 1425px;
-    border: 1px solid #8F8169;
-    border-radius: 18px;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding-left: 18px;
 }
 
 .avancar-boton{
-    /*position: absolute;*/
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 17px 75px;
-    gap: 10px;
-    
-    width: 302px;
-    height: 82px;
-    left: 490px;
-    /*top: 1591px;*/
     background: #EF8408;
-    border-radius: 18px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 35px 0px;
 }
 
 .avancar-boton a {
@@ -348,10 +197,6 @@ article .buscador{
     line-height: 48px;
     text-decoration: none;
     color: #FFFFFF;
-    /*flex: none;
-    order: 0;
-    flex-grow: 0;*/
-    
 }
 
 footer{
