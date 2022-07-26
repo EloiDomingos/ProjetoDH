@@ -7,6 +7,8 @@
 	padding: 0;
 }
 
+
+
 html {
 	height:100%;
 }
@@ -123,7 +125,6 @@ article .buscador{
 }
 
 .tituloprincipal{
-    position: absolute;
     width: 416px;
     height: 58px;
     left: 432px;
@@ -149,7 +150,6 @@ article .buscador{
     align-items: flex-start;
     padding: 20px 20px 40px;
     gap: 24px;
-    position: absolute;
     width: 832px;
     height: 326px;
     left: 224px;
@@ -190,7 +190,6 @@ article .buscador{
     align-items: flex-start;
     padding: 17px 75px;
     gap: 10px;
-    position: absolute;
     width: 265px;
     height: 82px;
     left: 508px;
@@ -225,7 +224,6 @@ article .buscador{
 }
 
 .titulo1{
-    position: absolute;
     width: 404px;
     height: 58px;
     left: 438px;
@@ -241,7 +239,6 @@ article .buscador{
 }
 
 .titulo2{
-    position: absolute;
     width: 439px;
     height: 58px;
     left: 421px;
@@ -262,7 +259,6 @@ article .buscador{
     align-items: flex-start;
     padding: 17px 75px;
     gap: 10px;
-    position: absolute;
     width: 385px;
     height: 82px;
     left: 446px;
