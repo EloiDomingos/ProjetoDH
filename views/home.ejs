@@ -4,45 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./stylesheets/home.css">
     <title>Dev's Beer</title>
 </head>
 <body>
-    
-    <header>
-        <article class="containerBlack">
-            <div class="logo">
-                <h1>Dev's Beer</h1>
-            </div>
-            <div class="botoes">
-                <button>Entrar</button>
-                <img src="./IMG header e footer/carrinho-de-compras.svg">
-            </div>
-        </article>
-        <article class="containerBlue">
-            <nav>
-                <ul class="menu">
-                    <li>IPAs</li>
-                    <li>Sour</li>
-                    <li>Todos os Produtos</li>
-                </ul>
-            </nav>
-            <div class="buscador">
-                <input type="search" id="busca" name="s" placeholder="buscar...">
-                <button>buscar</button>
-            </div>
-        </article>
-    </header>
+
+<%- include('./partials/header') %>
 
     <main>
 		<div class="banner1">
-			<img src="./IMG header e footer/banner 01.png">
+			<img src="./imagens/banner 01.png">
 		</div>
 		<div class="primeiralinha">
 			<article class="produtos">
 				<section class="card">
 					<div class="produtoIMG">
-						<img src="./IMG header e footer/beer01.jpg">
+						<img src="./imagens/beer01.jpg">
 					</div>
 					<div class="infoProd">
 						<p class="nomeC">Nome da Cerveja</p>
@@ -52,7 +29,7 @@
 				</section>
 				<section class="card">
 					<div class="produtoIMG">
-						<img src="./IMG header e footer/beer01.jpg">
+						<img src="./imagens/beer01.jpg">
 					</div>
 					<div class="infoProd">
 						<p class="nomeC">Nome da Cerveja</p>
@@ -62,7 +39,7 @@
 				</section>
 				<section class="card">
 					<div class="produtoIMG">
-						<img src="./IMG header e footer/beer01.jpg">
+						<img src="./imagens/beer01.jpg">
 					</div>
 					<div class="infoProd">
 						<p class="nomeC">Nome da Cerveja</p>
@@ -73,13 +50,13 @@
 			</article>
 		</div>
 		<div class="Promo">
-			<img src="./IMG header e footer/banner 02.png">
+			<img src="./imagens/banner 02.png">
             <p>PROMOÇÃO</p>
 		</div>
 		<article class="produtos">
 			<section class="card">
 				<div class="produtoIMG">
-					<img src="./IMG header e footer/beer01.jpg">
+					<img src="./imagens/beer01.jpg">
 				</div>
 				<div class="infoProd">
 					<p class="nomeC">Nome da Cerveja</p>
@@ -89,7 +66,7 @@
 			</section>
             <section class="card">
 				<div class="produtoIMG">
-					<img src="./IMG header e footer/beer01.jpg">
+					<img src="./imagens/beer01.jpg">
 				</div>
 				<div class="infoProd">
 					<p class="nomeC">Nome da Cerveja</p>
@@ -99,7 +76,7 @@
 			</section>
             <section class="card">
 				<div class="produtoIMG">
-					<img src="./IMG header e footer/beer01.jpg">
+					<img src="./imagens/beer01.jpg">
 				</div>
 				<div class="infoProd">
 					<p class="nomeC">Nome da Cerveja</p>
@@ -110,17 +87,7 @@
 		</article>
 	</main>
 
-	<footer>
-        <figure class="mapa">
-			<img src="./IMG header e footer/Screenshot_130.png">
-		</figure>
-		<div class="footInfo">
-			<h3>Dev's Beer</h3>
-			<p>contato</p>
-			<p>sobre nós</p>
-			<p>2 Kinoshinbomachi, Kanazawa, Ishikawa 920-0858, Japão</p>
-		</div>
-	</footer>
+	<%- include('./partials/footer') %>
 
 </body>
 </html>

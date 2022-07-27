@@ -116,6 +116,33 @@ article .buscador {
 
 /*Fim do header*/
 
+.botoes button {
+    border: none;
+    border-radius: 8px;
+    background-color: #EF8408;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+#container1 {
+    margin-top: 23px;
+    align-content: center;
+
+    align-self: center;
+    padding: 200px 600px;
+
+    border: 1px solid #8F8169;
+    border-radius: 18px;
+    font-size: 30px;
+    bottom: position;
+    
+}
+
+
 /*Início do Footer*/
 footer {
     background-color: #454956;
@@ -151,30 +178,4 @@ footer .footInfo p {
     line-height: 2;
     width: 400px;
     margin-top: 0px;
-}
-
-.botoes button {
-    border: none;
-    border-radius: 8px;
-    background-color: #EF8408;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-#container1 {
-    margin-top: 23px;
-    align-content: center;
-
-    align-self: center;
-    padding: 200px 600px;
-
-    border: 1px solid #8F8169;
-    border-radius: 18px;
-    font-size: 30px;
-    bottom: position;
-    
 }

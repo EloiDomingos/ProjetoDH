@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300 & family= Rajdhani:wght@300;500 & display=swap');
+
 * {
     box-sizing: border-box;	
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
 	padding: 0;
-    
 }
 
 html {
@@ -12,13 +12,9 @@ html {
 }
 
 body{
-    
-    margin: 0;
-	padding: 0;
 	display: flex;
 	flex-direction: column;
 	height:100%;
-    
 }
 
 header{
@@ -115,7 +111,6 @@ article .buscador{
 article{
     display: flex;
     align-items: center;
-    
 }
 
 .cards img{
@@ -129,12 +124,7 @@ display: inline-block;
 margin: 50px;
 padding: 0px;
 align-items: center;
-
 }
-
-
-
-
 
 footer{
     background-color: #454956;

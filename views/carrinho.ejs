@@ -4,41 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/stylesheets/carrinho.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <article class="containerBlack">
-            <div class="logo">
-                <h1>Dev's Beer</h1>
-            </div>
-            <div class="botoes">
-                <button>Entrar</button>
-                <img src="./IMG header e footer/carrinho-de-compras.svg">
-            </div>
-        </article>
-        <article class="containerBlue">
-            <nav>
-                <ul class="menu">
-                    <li>IPAs</li>
-                    <li>Sour</li>
-                    <li>Todos os Produtos</li>
-                </ul>
-            </nav>
-            <div class="buscador">
-                <input type="search" id="busca" name="s" placeholder="buscar...">
-                <button>buscar</button>
-            </div>
-        </article>
-    </header>
+    <%- include('./partials/header') %>
     <main>
         <article class="carrinho">
             <section class="listaProdutos">
                 <h2 class="tituloCarrinho">Carrinho de Compras</h2>
                 <ol class="produtosCarrinho">
                     <div class="produto1">
-                        <li class="infoProduto"><img src="./IMG carrinho/heineken-66-cl.jpeg" alt="foto cerveja Heineken">
+                        <li class="infoProduto"><img src="/imagens/heineken-66-cl.jpeg" alt="foto cerveja Heineken">
                             <div class="descPreço"><p>Cerveja Heineken garrafa 600ml</p>
                             <br>
                                 <p>R$ 15,00</p>
@@ -48,7 +26,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="infoProduto"><img src="./IMG carrinho/Colorado.jpg" alt="foto cerveja Colorado">
+                    <li class="infoProduto"><img src="/imagens/Colorado.jpg" alt="foto cerveja Colorado">
                         <div class="descPreço"><p>Cerveja Colorado garrafa 600ml</p>
                         <br>
                             <p>R$ 15,00</p>
@@ -58,7 +36,7 @@
                     </div>
                         </div>
                         </li>
-                        <li class="infoProduto"><img src="./IMG carrinho/cerveja-colorado-appia-600ml_77132.jpg" alt="foto cerveja Colorado Apia">
+                        <li class="infoProduto"><img src="/imagens/cerveja-colorado-appia-600ml_77132.jpg" alt="foto cerveja Colorado Apia">
                             <div class="descPreço"><p>Cerveja Colorado Apia garrafa 600ml</p>
                             <br>
                                 <p>R$ 15,00</p>
@@ -82,15 +60,6 @@
         </article>       
 
     </main>
-    <footer>
-        <figure class="mapa">
-			<img src="./IMG header e footer/Screenshot_130.png">	</figure>
-		<div class="footInfo">
-			<h3>Dev's Beer</h3>
-			<p>contato</p>
-			<p>sobre nós</p>
-			<p>2 Kinoshinbomachi, Kanazawa, Ishikawa 920-0858, Japan</p>
-		</div>
-	</footer>
+	<%- include('./partials/footer') %>
 </body>
 </html>
