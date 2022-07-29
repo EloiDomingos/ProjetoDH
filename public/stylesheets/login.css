@@ -123,132 +123,87 @@ article .buscador{
 }
 
 .tituloprincipal{
-    width: 416px;
-    height: 58px;
-    left: 432px;
-    top: 408px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    color: #000000;
+    font-size: 2rem;
+    padding: 45px 0px;
+    text-align: center;
 }
 
 .inicioform{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
 .input-group{
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 20px 20px 40px;
     gap: 24px;
-    width: 832px;
-    height: 326px;
-    left: 224px;
-    top: 511px;
     border: 1px solid #8F8169;
     border-radius: 18px;
 }
 
 .input-box label{
-    width: 82px;
-    height: 29px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
     display: flex;
-    align-items: center;
-    color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2;
+    padding-bottom: 16px;
 }
-
 .input-box input{
     box-sizing: border-box;
     width: 792px;
     height: 68px;
     border: 1px solid #8F8169;
     border-radius: 18px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
+
 .botao{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 17px 75px;
-    gap: 10px;
-    width: 265px;
-    height: 82px;
-    left: 508px;
-    top: 899px;
-    background: #EF8408;
-    border-radius: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #EF8408;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 40px;
 }
 
 .botao a{
-    width: 115px;
-    height: 48px;
-    font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 48px;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    text-decoration: none;
 }
 
+hr{
+    width: 1069px;
+    margin: 50px;
+}
 .partb{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
 }
 
 .titulos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    line-height: 2;
 }
 
 .titulo1{
-    width: 404px;
-    height: 58px;
-    left: 438px;
-    top: 1132px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
+    font-size: 2rem;
     line-height: 58px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-}
+    }
 
 .titulo2{
-    width: 439px;
-    height: 58px;
-    left: 421px;
-    top: 1266px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
-    display: flex;
-    align-items: center;
-    color: #000000;
+    font-size: 2rem;
 }
 
 .botao2{

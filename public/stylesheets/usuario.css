@@ -19,13 +19,13 @@ body {
     height: 100%;
 }
 
-header {
+header{
     display: flex;
     flex-direction: column;
 }
 
 /*PARTE PRETA*/
-header .containerBlack {
+header .containerBlack{
     background-color: #454956;
     display: flex;
     flex-direction: row;
@@ -33,22 +33,19 @@ header .containerBlack {
     align-items: center;
     padding: 0px 32px;
 }
-
-header .logo h1 {
+header .logo h1{
     font-family: 'Yanone Kaffeesatz';
     color: white;
     font-size: 3rem;
     margin: 0;
     padding: 42px 0px;
 }
-
-header .botoes {
+header .botoes{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
-
-.botoes button {
+.botoes button{
     border: none;
     border-radius: 8px;
     background-color: #EF8408;
@@ -59,41 +56,39 @@ header .botoes {
     text-decoration: none;
     padding: 10px 20px;
 }
-
-header .botoes img {
-    margin-left: 15px;
+header .botoes img{
+    margin-left:15px;
     width: 8%;
     filter: invert(84%) sepia(25%) saturate(930%) hue-rotate(347deg) brightness(103%) contrast(102%);
 }
 
 /*PARTE AZUL*/
-header .containerBlue {
+header .containerBlue{
     background-color: #1C6CB2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 32px;
 }
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
+nav ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	display: flex;
     gap: 32px;
 }
 
-nav ul li {
-    text-decoration: none;
-    color: #FFF;
+nav ul li{
+	text-decoration: none;
+	color: #FFF;
     font-size: 1.3rem;
 }
 
-article .buscador {
+article .buscador{
     display: flex;
 }
 
-.buscador button {
+header .buscador button{
     border: none;
     border-radius: 0px 8px 8px 0px;
     background-color: #EF8408;
@@ -105,8 +100,7 @@ article .buscador {
     margin: 0px;
     padding: 6px 18px;
 }
-
-.buscador input {
+.buscador input{
     border: none;
     border-radius: 8px 0px 0px 8px;
     margin: 0px;
@@ -116,32 +110,45 @@ article .buscador {
 
 /*Fim do header*/
 
-.botoes button {
+.retorno {
+    padding: 20px 57px;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+body h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+body div#boton button {
     border: none;
     border-radius: 8px;
     background-color: #EF8408;
     color: white;
     font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
+    font-size: 1.7rem;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
+    margin: 80px 0px 40px;
 }
 
 #container1 {
-    margin-top: 23px;
-    align-content: center;
-
-    align-self: center;
-    padding: 200px 600px;
-
     border: 1px solid #8F8169;
     border-radius: 18px;
     font-size: 30px;
-    bottom: position;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    align-self: center;
+    padding: 40px;
+    margin-bottom: 45px;
 }
 
+.infosContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
 
 /*Início do Footer*/
 footer {

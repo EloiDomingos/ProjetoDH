@@ -13,25 +13,21 @@
     <%- include('./partials/header') %>
     <main>
         <div class="retornoDePaginas">
-            <a href=""> <img src="/imagens/seta esquerda.jpg" alt=""> Página Inicial</a>
+            <a href=""> ← Página Inicial </a><span> < Produto </span>
         </div>
         <article class="imagemProdutoPreco">
-            <section>
+            <figure>
                 <img src="/imagens/cerveja-colorado-appia-600ml_77132.jpg" alt="Imagem Cerveja Colorado">
-            </section>
-            <section>
+            </figure>
+            <section class="qtdContainer">
                 <h2>Cerveja Colorado Appia garrafa 600ml</h2>
-                <br>
-                <p>R$ 15,00</p>
-                <br>
-                <div class="botaoQtdEadicionar"><h3>Qntd:</h3></div> 
+                <h2>R$ 15,00</h2>
+                <div class="botaoQtdEadicionar"><p>Qntd:</p>
                     <div class="newBotton">
-                            <input class="numberQuantity" type="number" id="quantity" name="quantity" min="1" max="5">
-                            <div class="botoes"><button>Adicionar</button>
-                        </div>
+                            <input class="numberQuantity" type="number" id="quantity" name="quantity" min="1" max="10">
+                            <button>Adicionar</button>
                     </div>
-            </section>
-            </div>
+                </div> 
             </section>
         </article>
         <section class="textoDescricaoProduto">
