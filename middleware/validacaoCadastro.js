@@ -9,3 +9,5 @@ function validacaoCadastro(res, req, next){
     }
 
 }
+
+module.exports = validacaoCadastro
