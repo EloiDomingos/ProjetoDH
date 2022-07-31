@@ -1,0 +1,16 @@
+[
+    {
+        "NomeCompleto": "lalala",
+        "DataNascimento": "2022-07-08",
+        "CadPessoaFisica": "312323",
+        "email": "dad@gmail.com",
+        "password": "$2b$11$RLZBVNS5a1LqdDsKXtC5qOyS8CXEOOclWTIE/WZkOs3OgB.aeBElC"
+    },
+    {
+        "NomeCompleto": "Sasanori Rurunori",
+        "DataNascimento": "2022-07-07",
+        "CadPessoaFisica": "19827678",
+        "email": "sasa@ruru.com",
+        "password": "$2b$11$VFYVrrNOszJSrfeLoMRuI..L07CVRa5QYgHg6rphfufduzKaK5LBG"
+    }
+]

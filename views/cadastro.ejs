@@ -22,47 +22,45 @@
         </div>
         
         <div class="inicioform">
-            <form action="#" method="post">
+            <form action="/user/cadastro" method="POST" id="registerForm">
                 <div class = "input-group">
 
                     <div class = "inputs">
                         <label for="NomeCompleto">Nome Completo</label>
                         <input id ="NomeCompleto" type="text" 
-                        name="NomeCompleto" placeholder="Digite seu nome completo" required>
+                        name="NomeCompleto" placeholder="Digite seu nome completo">
                     </div>
 
                     <div class = "inputs">
                         <label for="DataNascimento">Data de Nascimento</label>
                         <input id ="DataNascimento" type="date" 
-                        name="DataNascimento" placeholder="Digite a sua data de nascimento" required>
+                        name="DataNascimento" placeholder="Digite a sua data de nascimento">
                     </div>
 
                     <div class = "inputs">
                         <label for="CadPessoaFisica">CPF</label>
                         <input id ="CadPessoaFisica" type="text" 
-                        name="CadPessoaFisica" placeholder="Digite o seu CPF" required>
+                        name="CadPessoaFisica" placeholder="Digite o seu CPF">
                     </div>
 
                     <div class = "inputs">
                         <label for="Email">E-mail</label>
                         <input id ="Email" type="email" 
-                        name="E-mail" placeholder="Digite seu e-mail" required>
+                        name="email" placeholder="Digite seu e-mail">
                     </div>
 
                     <div class = "inputs">
                         <label for="SenhaCad">Senha</label>
                         <input id ="SenhaCad" type="password" 
-                        name="SenhaCad" placeholder="Digite a sua senha" required>
+                        name="password" placeholder="Digite a sua senha">
                     </div>    
                 </div>
             </form>
         </div>
-            <button class = "avancar-boton"> <a href="#"> Avançar </a> </button>
+            <button type="submit" form="registerForm" class="avancar-boton">Avançar</button>
     </div>
 
-
 	<%- include('./partials/footer') %>
-
     
 </body>
 

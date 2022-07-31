@@ -17,21 +17,21 @@
         <div class="parta">
             <h1 class="tituloprincipal">Log-in de Usuário</h1>
             <div class="inicioform">
-                <form action="#">
+                <form action="/user/login" method="POST" id="loginCad">
                     <div class="input-group">
                         <div class = "input-box">
                             <label for="E-mail">E-mail:</label>
                             <input id ="E-mail" type="email" 
-                            name="E-mail"  required>
+                            name="email"  required>
                         </div>
                         <div class = "input-box">
                             <label for="Senha">Senha:</label>
                             <input id ="Senha" type="password" 
-                            name="Senha" required>
+                            name="password" required>
                         </div>
                     </div>
                 </form>
-                    <button class="botao"><a href="#">Entrar</a></button>
+                    <button type="submit" form="loginCad" class="botao">Entrar</button>
             </div>
         </div>
 <hr>
@@ -41,7 +41,7 @@
                 <h1 class="titulo2">Cadastre-se agora !</h1>       
             </div>
                 <button class="botao">
-                    <a href="#">Cadastre-se</a>
+                    <a href="/user/cadastro">Cadastre-se</a>
                 </button>
         </div>
     </div>

@@ -18,136 +18,11 @@ body {
 	flex-direction: column;
 	height:100%;
 }
-
-header{
-    display: flex;
-    flex-direction: column;
+a{
+    cursor: pointer;
 }
-
-/*PARTE PRETA*/
-header .containerBlack{
-    background-color: #454956;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 32px;
-}
-header .logo h1{
-    font-family: 'Yanone Kaffeesatz';
-    color: white;
-    font-size: 3rem;
-    margin: 0;
-    padding: 42px 0px;
-}
-header .botoes{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.botoes button{
-    border: none;
-    border-radius: 8px;
-    background-color: #EF8408;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-header .botoes img{
-    margin-left:15px;
-    width: 8%;
-    filter: invert(84%) sepia(25%) saturate(930%) hue-rotate(347deg) brightness(103%) contrast(102%);
-}
-
-/*PARTE AZUL*/
-header .containerBlue{
-    background-color: #1C6CB2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 32px;
-}
-nav ul{
-	margin:0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-    gap: 32px;
-}
-
-.nomeTeste{
-    background-color: black;
-}
-
-nav ul li{
-	text-decoration: none;
-	color: #FFF;
-    font-size: 1.3rem;
-}
-
-article .buscador{
-    display: flex;
-}
-
-.buscador button{
-    border: none;
-    border-radius: 0px 8px 8px 0px;
-    background-color: #EF8408;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
-    text-decoration: none;
-    margin: 0px;
-    padding: 6px 18px;
-}
-.buscador input{
-    border: none;
-    border-radius: 8px 0px 0px 8px;
-    margin: 0px;
-    width: 250px;
-    font-size: 1rem;
-}
-
-/*Fim do header*/
-
-/*Ini­cio do Footer*/
-footer{
-    background-color: #454956;
-	display: flex;
-	flex-direction: row;
-    padding: 25px 35px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .mapa{
-    margin: 0;
-}
-
-footer .mapa img{
-    height: 300px;
-	width: 560px;
-	border-radius: 8px;
-    object-fit: cover;
-}
-
-footer .footInfo{
-	color: white;
-}
-
-footer .footInfo h3{
-    font-size: 2rem;
-}
-
-footer .footInfo p{
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 2;
-    width: 400px;
+button{
+    cursor: pointer;
 }
 
 /*CSS CARRINHO*/
@@ -186,16 +61,24 @@ footer .footInfo p{
     margin-right: 10px;
     justify-content: space-between;
     border-radius: 8px;
+    position: relative;
 }
 
 .totalCarrinho{
     border: #8F8169 2px solid;
     height: 300px;
-    width: 400px;
     font-size: 40px;
     line-height: 58px;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     margin: 10px;
+    position: sticky;
+    background-color: white;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 

@@ -8,7 +8,7 @@ const session = require('express-session');
 
 //importa as rotas
 const homeRouter = require('./routes/index');
-const useroRouter = require('./routes/user');
+const userRouter = require('./routes/user');
 const shopRouter = require('./routes/shop');
 
 
@@ -34,7 +34,7 @@ app.use(session({
 
 app.use('/home', homeRouter);
 app.use('/shop', shopRouter);
-app.use('/user', useroRouter);
+app.use('/user', userRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

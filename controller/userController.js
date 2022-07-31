@@ -1,12 +1,48 @@
+const fs = require("fs");
+const usersJson = require('../users.json')
+const bcrypt = require('bcrypt')
+const url = require('url')
+
 const userController ={
-    cadastro: (req,res)=>{
+    renderCadastro: (req,res)=>{
         res.render('cadastro')
+    },
+    cadastro: (req,res) => {
+        const user = req.body
+        const cryptLurker = bcrypt.hashSync(user.password, 11)
+        user.password = cryptLurker
+        usersJson.push(user)
+        fs.writeFile("users.json", JSON.stringify(usersJson, null, 4), err =>{
+            if (err) throw err;
+            console.log("Done writing");
+        });
+        return res.redirect('/user/login')
     },
     login: (req,res)=>{
         res.render('login')
     },
     usuario: (req,res)=>{
-        res.render('usuario')
+        res.render('usuario', {userData:req.query})
+        
+    },
+    auth: (req,res)=>{
+        const user = req.body
+        const wol = usersJson.find((userData)=> userData.email === user.email)
+        if (wol) {
+            const validPass = bcrypt.compareSync(user.password, wol.password)
+            if (validPass) {
+                req.session.isAuth = user.email
+                return res.redirect(url.format({
+                    pathname: '/user/usuario',
+                    query:{
+                        "name":wol.NomeCompleto,
+                        "cpf":wol.CadPessoaFisica,
+                        "dna":wol.DataNascimento,
+                    }
+                }))
+            }
+        }
+        return res.send('Login ou senha inválidos')
     }
 }
 

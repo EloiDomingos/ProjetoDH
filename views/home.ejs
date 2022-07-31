@@ -17,36 +17,18 @@
 		</div>
 		<div class="primeiralinha">
 			<article class="produtos">
+				<% for(let i=0; i < 3;i++){ %>
 				<section class="card">
 					<div class="produtoIMG">
-						<img src="./imagens/beer01.jpg">
+						<img src="<%= cerva[i].img %>" alt="garrafa de cerveja">
 					</div>
 					<div class="infoProd">
-						<p class="nomeC">Nome da Cerveja</p>
-						<p>Preço: R$15,00</p>
-						<button>Adicionar</button>
+						<p class="nomeC"><%= cerva[i].name %></p>
+						<p>Preço: R$<%= cerva[i].price %></p>
+						<a href="/shop"><button>Adicionar</button></a>
 					</div>
 				</section>
-				<section class="card">
-					<div class="produtoIMG">
-						<img src="./imagens/beer01.jpg">
-					</div>
-					<div class="infoProd">
-						<p class="nomeC">Nome da Cerveja</p>
-						<p>Preço: R$15,00</p>
-						<button>Adicionar</button>
-					</div>
-				</section>
-				<section class="card">
-					<div class="produtoIMG">
-						<img src="./imagens/beer01.jpg">
-					</div>
-					<div class="infoProd">
-						<p class="nomeC">Nome da Cerveja</p>
-						<p>Preço: R$15,00</p>
-						<button>Adicionar</button>
-					</div>
-				</section>
+				<%}%>
 			</article>
 		</div>
 		<div class="Promo">
@@ -54,36 +36,18 @@
             <p>PROMOÇÃO</p>
 		</div>
 		<article class="produtos">
+			<% for(let i=3; i < cerva.length ;i++){ %>
 			<section class="card">
 				<div class="produtoIMG">
-					<img src="./imagens/beer01.jpg">
+					<img src="<%= cerva[i].img %>" alt="garrafa de cerveja">
 				</div>
 				<div class="infoProd">
-					<p class="nomeC">Nome da Cerveja</p>
-					<p>Preço: R$15,00</p>
+					<p class="nomeC"><%= cerva[i].name %></p>
+					<p>Preço: R$<%= cerva[i].price %></p>
 					<button>Adicionar</button>
 				</div>
 			</section>
-            <section class="card">
-				<div class="produtoIMG">
-					<img src="./imagens/beer01.jpg">
-				</div>
-				<div class="infoProd">
-					<p class="nomeC">Nome da Cerveja</p>
-					<p>Preço: R$15,00</p>
-					<button>Adicionar</button>
-				</div>
-			</section>
-            <section class="card">
-				<div class="produtoIMG">
-					<img src="./imagens/beer01.jpg">
-				</div>
-				<div class="infoProd">
-					<p class="nomeC">Nome da Cerveja</p>
-					<p>Preço: R$15,00</p>
-					<button>Adicionar</button>
-				</div>
-			</section>
+			<%}%>
 		</article>
 	</main>
 
