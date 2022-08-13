@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/carrinho.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+    <main>
+        <section class="informacoes">
+            <p>Informações de envio</p>
+            <p>Fulano da Silva</p>
+            <p>Rua 123, Bairro Azul, nº24</p>
+            <p>Algum Lugar Bonito, 00000-000</p>
+            <button>selecionar outro endereço</button>
+        </section>
+        <section class="pagamento">
+            <p>Método de Pagamento</p>
+            <p>Fulano da Silva</p>
+            <p>123********23</p>
+            <p>Matercard</p>
+            <button>selecionar outro método de pagamento</button>
+        </section>
+        <section class="revisaoPedido">
+            <li class="infoProduto"><img src="/imagens/heineken-66-cl.jpeg" alt="foto cerveja Heineken">
+                <div class="descPreço"><p>Cerveja Heineken garrafa 600ml</p>
+                <br>
+                    <p>R$ 15,00</p>
+                <br>
+                <div class="botoes">
+                    <button>adicionar</button>
+                </div>
+            </div>
+        </li>
+        <li class="infoProduto"><img src="/imagens/Colorado.jpg" alt="foto cerveja Colorado">
+            <div class="descPreço"><p>Cerveja Colorado garrafa 600ml</p>
+            <br>
+                <p>R$ 15,00</p>
+            <br>
+            <div class="botoes">
+            <button>adicionar</button>
+        </div>
+            </div>
+            </li>
+            <li class="infoProduto"><img src="/imagens/cerveja-colorado-appia-600ml_77132.jpg" alt="foto cerveja Colorado Apia">
+                <div class="descPreço"><p>Cerveja Colorado Apia garrafa 600ml</p>
+                <br>
+                    <p>R$ 15,00</p>
+                <br>
+                <div class="botoes">
+                <button>adicionar</button>
+            </div>
+        </div>
+                </li>
+    </ol>
+        </section>
+        <section class="totalCarrinho">
+            <h2>Total</h2>
+            <p>R$ 150,00</p>
+            <div class="botoes">
+            <button>Continuar Comprando</button>
+            <br>
+            <button>Finalizar Compra</button>
+        </div>
+        </section>
+
+    </main>
+	<%- include('./partials/footer') %>
+</body>
+</html>
