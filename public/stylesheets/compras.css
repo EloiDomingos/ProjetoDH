@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;	
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+	padding: 0;
+}
+
+html {
+	height:100%;
+}
+
+.maininteira{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    border: #8F8169 solid 2px;
+    border-radius: 8px;
+    margin: 10px;
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+}
+
+.pagamento{
+        display: flex;
+        flex-direction: column;
+        border: #8F8169 solid 2px;
+        border-radius: 8px;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+}
+
+
+
+
+
+.infoProduto{
+    border: #8F8169 solid 2px;
+    border-radius: 8px;
+    margin: 10px;
+    display: flex;
+    padding-top: 30px;
+}
+
+.imagemproduto{
+    
+    width: 250px;
+    height: 250px;
+}
+
+.totalCarrinho{
+    border: #8F8169 2px solid;
+    height: 300px;
+    font-size: 40px;
+    line-height: 58px;
+    padding: 50px;
+    border-radius: 8px;
+    margin: 102px;
+    position: sticky;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.botaoselecionaroutro{
+    height: 40px;
+    margin: 5px;
+}
