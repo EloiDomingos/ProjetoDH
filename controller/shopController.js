@@ -4,6 +4,9 @@ const shopController ={
     },
     carrinho: (req,res)=>{
         res.render('carrinho')
+    },
+    compra: (req,res)=>{
+        res.render('compra')
     }
 }
 
