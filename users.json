@@ -19,5 +19,12 @@
         "CadPessoaFisica": "22222222222222222",
         "email": "robsonfranco89.rf@gmail.com",
         "password": "$2b$11$COaDGIthlwIz4T9wAOi0FuN955CoKdhIWWt0f44BZ5PPxZ7XuCmTG"
+    },
+    {
+        "NomeCompleto": "testando",
+        "DataNascimento": "2022-08-13",
+        "CadPessoaFisica": "00000000000",
+        "email": "testando@teste.com",
+        "password": "$2b$11$gnvnyuM463BxpSjN5bLzcOCOjvPugI24RivUuSzDSLUKn4m9jXsmy"
     }
 ]
