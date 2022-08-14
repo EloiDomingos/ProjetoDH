@@ -92,6 +92,7 @@ article .buscador{
     margin: 0px;
     width: 250px;
     font-size: 1rem;
+    padding: 0px 5px;
 }
 
 /*Fim do header*/
@@ -129,4 +130,43 @@ footer .footInfo h3{
 
 footer .footInfo a, p{
     font-size: 1.5rem;
+}
+
+
+@media (max-width: 942px){
+    /*mobile*/
+    
+    header .containerBlack .logo{
+        width: 100vh;
+    }
+
+    header .containerBlack {
+        padding: 0px 20px;
+    }
+
+    .botoes button{
+        font-size: 1.4rem;
+        padding: 14px 20px;
+    }
+
+    header .containerBlue{
+        display:none;
+    }
+    footer{
+        margin-top: 20px;
+    }
+
+    footer .mapa {
+        display: none;
+    }
+
+    footer .footInfo h3{
+        font-size: 2rem;
+    }
+    
+    footer .footInfo a{
+        font-size: 1.2rem;
+        width: fit-content;
+        font-weight: normal;
+    }
 }
