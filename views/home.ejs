@@ -25,7 +25,7 @@
 					<div class="infoProd">
 						<p class="nomeC"><%= cerva[i].name %></p>
 						<p>Preço: R$<%= cerva[i].price %></p>
-						<a href="/shop"><button>Adicionar</button></a>
+						<a href= <%= `/shop/${cerva[i].id}` %> ><button>Adicionar</button></a>
 					</div>
 				</section>
 				<%}%>

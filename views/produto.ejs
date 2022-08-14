@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheets/produto.css">
+    <link rel="stylesheet" href="/stylesheets/produto.css">
     <title>Document</title>
 </head>
 
@@ -13,15 +13,15 @@
     <%- include('./partials/header') %>
     <main>
         <div class="retornoDePaginas">
-            <a href=""> ← Página Inicial </a><span> < Produto </span>
+            <a href="/home">← Página Inicial</a><span> < Produto </span>
         </div>
         <article class="imagemProdutoPreco">
             <figure>
-                <img src="/imagens/cerveja-colorado-appia-600ml_77132.jpg" alt="Imagem Cerveja Colorado">
+                <img src="<%= product.img %>" alt="Imagem Cerveja <%= product.name %>">
             </figure>
             <section class="qtdContainer">
-                <h2>Cerveja Colorado Appia garrafa 600ml</h2>
-                <h2>R$ 15,00</h2>
+                <h2><%= product.name %></h2>
+                <h2>R$ <%= product.price %></h2>
                 <div class="botaoQtdEadicionar"><p>Qntd:</p>
                     <div class="newBotton">
                             <input class="numberQuantity" type="number" id="quantity" name="quantity" min="1" max="10">
