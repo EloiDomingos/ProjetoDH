@@ -1,0 +1,1 @@
+const { sequelize, Endereco } = require('../database/models')

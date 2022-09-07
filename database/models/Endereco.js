@@ -6,9 +6,9 @@ module.exports = (sequelize, DataTypes) => {
         cep: DataTypes.STRING,
         cidade: DataTypes.STRING,
     },
-    {
-        tableName: 'endereco',
-        timestamps: false
-    })
+        {
+            tableName: 'endereco',
+            timestamps: false
+        })
     return endereco
 }

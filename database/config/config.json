@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "escola",
+    "username": "Robson89",
+    "password": "Raf1407",
+    "database": "devsbeer",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "port":"3306"
