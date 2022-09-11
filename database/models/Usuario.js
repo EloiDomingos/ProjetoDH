@@ -13,5 +13,6 @@ module.exports = (sequelize, Datatypes) => {
             tableName: 'usuarios',
             timestamps: false
         })
-    return usuario
-}
+
+        return usuario
+    }
