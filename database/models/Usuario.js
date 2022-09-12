@@ -14,5 +14,11 @@ module.exports = (sequelize, Datatypes) => {
             timestamps: false
         })
 
-        return usuario
+        usuario.associate= (models)=>{
+            usuario.belongsTo(models.Endereco, {
+                as:'usuario_endereco',
+                foreignKey:'endereco_idendereco' 
+            })
+        }
+    return usuario
     }
