@@ -19,6 +19,10 @@ module.exports = (sequelize, Datatypes) => {
                 as:'usuario_endereco',
                 foreignKey:'endereco_idendereco' 
             })
+            usuario.hasMany(models.Pedido, {
+                as:'usuario_pedido',
+                foreignKey:'usuarios_id'
+            })
         }
     return usuario
     }
