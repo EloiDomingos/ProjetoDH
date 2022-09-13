@@ -7,5 +7,12 @@ module.exports = (sequelize, Datatypes) => {
             tableName: 'tipo',
             timestamps: false
         })
+
+        tipo.associate= (models)=>{
+            tipo.hasMany(models.Produto, {
+                as:'tipo_produto',
+                foreignKey:'tipo_id'
+            })
+        }
     return tipo
 }

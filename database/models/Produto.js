@@ -14,5 +14,12 @@ module.exports = (sequelize, Datatypes) => {
             tableName: 'produtos',
             timestamps: false
         })
+
+        produto.associate= (models)=>{
+            produto.belongsTo(models.Tipo, {
+                as:'produto_tipo',
+                foreignKey:'tipo_id'
+            })
+        }
     return produto
 }
