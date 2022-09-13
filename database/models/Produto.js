@@ -20,6 +20,17 @@ module.exports = (sequelize, Datatypes) => {
                 as:'produto_tipo',
                 foreignKey:'tipo_id'
             })
+
+            produto.associate= (models)=>{
+                produto.belongsToMany(models.Pedido, {
+                    as:'produto_pedido',
+                    through:'produto_has_pedidos',
+                    foreignKey:'produto_id',
+                    otherkey:'pedido_id',
+                    timestamps:false
+
+                })
+            }
         }
     return produto
 }
