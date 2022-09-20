@@ -10,16 +10,21 @@
 <body>
     <%- include('./partials/header') %>
 
-    <div class="retorno"> <span>← Pagina inicial</span> <span> < perfil</span>  </div>
+    <div class="retorno"> <span><a href="/home">← Página Inicial</a></span> <span> < perfil</span>  </div>
     <h1>Dados Pessoais</h1>
     <div id="container1">
     <div class="infosContainer">
-        <div id="nome">  <b>Nome Completo</b><p><%= userData.name %></p></div> 
-        <div> <b>CPF</b><p><%= userData.cpf %></p></div>
-        <div id="data"> <b>Data de Nascimento</b><p><%= userData.dna %></p></div> 
+        <div><b>Nome Completo</b><p><%= userData.name %></p></div> 
+        <div><b>CPF</b><p><%= userData.cpf %></p></div>
+        <div><b>Data de Nascimento</b><p><%= userData.dna %></p></div> 
+        <div><b>Telefone</b><p><%= userData.phone %></p></div>
+        <div><b>Endereço</b><p><%= userData.add %></p></div>
+        <div><b>Cidade</b><p><%= userData.city %></p></div>
+        <div><b>CEP</b><p><%= userData.zip %></p></div>
     </div>  
     <div id="boton">
         <button>Editar Meus Dados</button>
+        <button>Excluir Minha Conta</button>
     </div>
 </div>
 
