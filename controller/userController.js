@@ -22,7 +22,7 @@ const userController = {
         res.render('login')
     },
     usuario: (req, res) => {
-        res.render('usuario', { userData: req.query })
+        res.render('usuario', { userData: req.session.usuario })
 
     },
     auth: (req, res) => {
@@ -32,6 +32,14 @@ const userController = {
             const validPass = bcrypt.compareSync(user.password, wol.password)
             if (validPass) {
                 req.session.isAuth = user.email
+                req.session.usuario = {"name":wol.NomeCompleto,
+                "cpf":wol.CadPessoaFisica,
+                "dna":wol.DataNascimento,
+                "phone":wol.phone,
+                "add":wol.address,
+                "city":wol.city,
+                "zip":wol.zip
+            }
                 return res.redirect(url.format({
                     pathname: '/user/usuario',
                     query:{
