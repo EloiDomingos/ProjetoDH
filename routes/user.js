@@ -13,4 +13,7 @@ router.get('/cadastro', userController.renderCadastro)
 router.post('/cadastro', userController.cadastro)
 router.get('/usuario', xablau, userController.usuario)
 
+
+
+
 module.exports = router;

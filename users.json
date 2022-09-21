@@ -26,5 +26,40 @@
         "CadPessoaFisica": "00000000000",
         "email": "testando@teste.com",
         "password": "$2b$11$gnvnyuM463BxpSjN5bLzcOCOjvPugI24RivUuSzDSLUKn4m9jXsmy"
+    },
+    {
+        "NomeCompleto": "teste 1 18-09",
+        "DataNascimento": "2022-09-18",
+        "CadPessoaFisica": "22222222222222",
+        "email": "teste1@gmail.com",
+        "password": "$2b$11$SnHE1D1QlP7.qUjrUckpueHvcs7ERVERO6ROBvJAxPirmASE0hOee"
+    },
+    {
+        "NomeCompleto": "teste 1 18-09",
+        "DataNascimento": "2022-09-18",
+        "CadPessoaFisica": "22222222222222",
+        "email": "teste1@gmail.com",
+        "password": "$2b$11$oDtKo5XfgKMbvGXIlFwHY.UKhwog0YRnlu/Et0XdfK2A6JNJeLJvK"
+    },
+    {
+        "NomeCompleto": "teste 2",
+        "DataNascimento": "",
+        "CadPessoaFisica": "22222222222222",
+        "email": "teste2@gmail.com",
+        "password": "$2b$11$iTOQf3SuAvfJFGQ0Ioe41.uJnkzGo4V4.Gy56UBc8k//JjVs7.j26"
+    },
+    {
+        "NomeCompleto": "teste 3",
+        "DataNascimento": "",
+        "CadPessoaFisica": "22222222222222",
+        "email": "teste3@gmail.com",
+        "password": "$2b$11$KkUpuww0RQK0dUc8j7Dxy.TATjTaXKhjrFj8XfgA/YbpAknU3j1pS"
+    },
+    {
+        "NomeCompleto": "teste 0",
+        "DataNascimento": "",
+        "CadPessoaFisica": "22222222222222222",
+        "email": "teste0@gmail.com",
+        "password": "$2b$11$p7.WBl3YajGqwWui0sGAs.YXJRUQo9.GT08sKP.SyItcXq6dufx5e"
     }
 ]
