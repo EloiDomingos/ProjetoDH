@@ -34,10 +34,14 @@ const userController = {
                 req.session.isAuth = user.email
                 return res.redirect(url.format({
                     pathname: '/user/usuario',
-                    query: {
-                        "name": wol.NomeCompleto,
-                        "cpf": wol.CadPessoaFisica,
-                        "dna": wol.DataNascimento,
+                    query:{
+                        "name":wol.NomeCompleto,
+                        "cpf":wol.CadPessoaFisica,
+                        "dna":wol.DataNascimento,
+                        "phone":wol.phone,
+                        "add":wol.address,
+                        "city":wol.city,
+                        "zip":wol.zip
                     }
                 }))
             }

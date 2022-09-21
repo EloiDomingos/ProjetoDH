@@ -28,6 +28,7 @@
         "password": "$2b$11$gnvnyuM463BxpSjN5bLzcOCOjvPugI24RivUuSzDSLUKn4m9jXsmy"
     },
     {
+<<<<<<< HEAD
         "NomeCompleto": "teste 1 18-09",
         "DataNascimento": "2022-09-18",
         "CadPessoaFisica": "22222222222222",
@@ -61,5 +62,38 @@
         "CadPessoaFisica": "22222222222222222",
         "email": "teste0@gmail.com",
         "password": "$2b$11$p7.WBl3YajGqwWui0sGAs.YXJRUQo9.GT08sKP.SyItcXq6dufx5e"
+=======
+        "NomeCompleto": "",
+        "email": "",
+        "CadPessoaFisica": "",
+        "DataNascimento": "",
+        "phone": "",
+        "address": "",
+        "city": "",
+        "zip": "",
+        "password": "$2b$11$gHZoEuO5/s0EPd8Ue2Ud2uHji8FOBl8/BM/yPy.aFTojEZG7bCcEK"
+    },
+    {
+        "NomeCompleto": "admin2",
+        "email": "admin2@admin.com",
+        "CadPessoaFisica": "12345678900",
+        "DataNascimento": "1995-09-20",
+        "phone": "21123456789",
+        "address": "Rua X",
+        "city": "Brasilia",
+        "zip": "12345678",
+        "password": "$2b$11$hO.qX2z5FIgSx.M1Jk1FEONY1vjfX0YqtT310SZc4MK1rHgnmfuw."
+    },
+    {
+        "NomeCompleto": "admin3",
+        "email": "admin3@admin.com",
+        "CadPessoaFisica": "12345",
+        "DataNascimento": "1995-12-20",
+        "phone": "12345879",
+        "address": "bilbo",
+        "city": "hue",
+        "zip": "12345",
+        "password": "$2b$11$QWpNAxTIiyJcZmxXNT6aKuv8X4Wsh5ZH1dAn4torfxE55jBDXzn6C"
+>>>>>>> 679f4fc17e257e6e91edee244fd5c15a09f15355
     }
 ]
