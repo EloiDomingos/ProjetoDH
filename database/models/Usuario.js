@@ -7,7 +7,7 @@ module.exports = (sequelize, Datatypes) => {
         data: Datatypes.INTEGER,
         tele: Datatypes.INTEGER,
         senha: Datatypes.STRING,
-        endereco_idendereco: Datatypes.INTEGER
+        endereco_id: Datatypes.INTEGER
     },
         {
             tableName: 'usuarios',
@@ -17,7 +17,7 @@ module.exports = (sequelize, Datatypes) => {
         usuario.associate= (models)=>{
             usuario.belongsTo(models.Endereco, {
                 as:'usuario_endereco',
-                foreignKey:'endereco_idendereco' 
+                foreignKey:'endereco_id' 
             })
             usuario.hasMany(models.Pedido, {
                 as:'usuario_pedido',
