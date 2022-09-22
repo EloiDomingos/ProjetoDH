@@ -61,5 +61,16 @@
         "CadPessoaFisica": "22222222222222222",
         "email": "teste0@gmail.com",
         "password": "$2b$11$p7.WBl3YajGqwWui0sGAs.YXJRUQo9.GT08sKP.SyItcXq6dufx5e"
+    },
+    {
+        "NomeCompleto": "",
+        "email": "",
+        "CadPessoaFisica": "3845",
+        "DataNascimento": "",
+        "phone": "",
+        "address": "",
+        "city": "",
+        "zip": "",
+        "password": "$2b$11$ngDzS9W9w87C6ydawxbjvusUnHO.a.K53NK9h.XWNE38XJbA2hggG"
     }
 ]

@@ -10,9 +10,9 @@ module.exports = (sequelize, DataTypes) => {
         })
 
         endereco.associate= (models)=>{
-            endereco.hasMany(models.Usuario, {
+            endereco.belongsTo(models.Usuario, {
                 as:'endereco_usuario',
-                foreignKey:'endereco_id' 
+                foreignKey:'usuarios_id' 
             })
         }
     return endereco

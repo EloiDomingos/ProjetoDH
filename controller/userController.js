@@ -18,6 +18,22 @@ const userController = {
         });
         return res.redirect('/user/login')
     },
+
+    salvar: async(req, res) =>{
+        const {nome, email, cpf, data, tele, senha, endereco } = req.body
+
+        const resultSave = await Usuario.create ({
+            nome,
+            email,
+            cpf,
+            data,
+            tele,
+            senha,
+            
+        
+        })
+    },
+
     login: (req, res) => {
         res.render('login')
     },
