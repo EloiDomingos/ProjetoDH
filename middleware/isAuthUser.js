@@ -5,7 +5,7 @@ console.log(req.session.isAuth)
     if(req.session.isAuth){
         next()
     }else{
-       return res.redirect('/user/cadastro')
+       return res.redirect('/user/login')
     }
 
 }
