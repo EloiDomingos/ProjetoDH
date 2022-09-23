@@ -6,8 +6,6 @@ module.exports = (sequelize, Datatypes) => {
         tipo: Datatypes.STRING,
         preco: Datatypes.INTEGER,
         marca: Datatypes.STRING,
-        status: Datatypes.STRING,
-        forma: Datatypes.STRING,
         tipo_id: Datatypes.INTEGER
     },
         {
