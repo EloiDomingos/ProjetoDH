@@ -12,6 +12,7 @@ router.post('/login', userController.auth)
 router.get('/cadastro', userController.renderCadastro)
 router.post('/cadastro', userController.cadastro)
 router.get('/usuario', xablau, userController.usuario)
+router.post('/cadastro', userController.salvar)
 
 
 
