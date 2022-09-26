@@ -74,58 +74,14 @@
         "password": "$2b$11$ngDzS9W9w87C6ydawxbjvusUnHO.a.K53NK9h.XWNE38XJbA2hggG"
     },
     {
-        "NomeCompleto": "teste01 25-09",
-        "email": "teste12509@gmail.com",
-        "CadPessoaFisica": "22222222222222",
-        "DataNascimento": "2020-05-10",
-        "phone": "1235959595",
-        "address": "rua teste 25 setembro",
-        "city": "Mogi Guaçu",
+        "NomeCompleto": "admin4",
+        "email": "admin2@gmail.com",
+        "CadPessoaFisica": "12345678900",
+        "DataNascimento": "1990-09-05",
+        "phone": "21123456789",
+        "address": "lua",
+        "city": "linda",
         "zip": "12345678",
-        "password": "$2b$11$.dwlxE244r2VbprcZjMVAutBPLhhlFH4Q7Fm1h56gTsoO05u5gnDe"
-    },
-    {
-        "NomeCompleto": "teste 02 25092022",
-        "email": "teste2@gmail.com",
-        "CadPessoaFisica": "22222222222222",
-        "DataNascimento": "2022-09-25",
-        "phone": "1235959595",
-        "address": "rua teste 25 setembro",
-        "city": "Mogi Guaçu",
-        "zip": "12345678",
-        "password": "$2b$11$s8dJiF04jHftovZoi0F5HOExgqcNU/2Pql6a3IxHHG9u3jqky/zye"
-    },
-    {
-        "NomeCompleto": "Robson",
-        "email": "teste1@gmail.com",
-        "CadPessoaFisica": "",
-        "DataNascimento": "2022-09-25",
-        "phone": "1235959595",
-        "address": "rua teste 25 setembro",
-        "city": "Mogi Guaçu",
-        "zip": "12345678",
-        "password": "$2b$11$ijiVnysucv58sc.s3cuBK.B2mtuzerzxX1VS3sKCbmV5vzuJQXxGS"
-    },
-    {
-        "NomeCompleto": "teste 02  25",
-        "email": "teste1@gmail.com",
-        "CadPessoaFisica": "",
-        "DataNascimento": "",
-        "phone": "",
-        "address": "",
-        "city": "",
-        "zip": "",
-        "password": "$2b$11$6qIvIA804PXURfmiB7StPuNGYW3xKwEnUW4IK8p76idBqxF7uSRU2"
-    },
-    {
-        "NomeCompleto": "teste 2156 ",
-        "email": "teste1@gmail.com",
-        "CadPessoaFisica": "",
-        "DataNascimento": "",
-        "phone": "",
-        "address": "",
-        "city": "",
-        "zip": "",
-        "password": "$2b$11$FqKUx1hH8nmEEf/KrW/ppe411AZuJhJXM0AIJfYzLwmC5mCapBicS"
+        "password": "$2b$11$3F3QV5ZJsG/BRxnLY1BBSeYVhId2vizuwCDoRzhsHqRmy3qusZv5e"
     }
 ]

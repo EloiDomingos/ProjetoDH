@@ -24,7 +24,9 @@
     </div>  
     <div id="boton">
         <button>Editar Meus Dados</button>
-        <button>Excluir Minha Conta</button>
+        <form action="/user/deletar/<%= userData.id%>?_method=DELETE" method="post">
+            <button>Excluir Minha Conta</button>
+        </form>
     </div>
 </div>
 

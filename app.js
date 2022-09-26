@@ -5,6 +5,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session = require('express-session');
+const sequelize = require('sequelize');
+const methodOverride = require('method-override')
 
 //importa as rotas
 const homeRouter = require('./routes/index');
@@ -31,13 +33,20 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
+app.use(methodOverride('_method'));
 
 app.use('/home', homeRouter);
 app.use('/shop', shopRouter);
 app.use('/user', userRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(async function(req, res, next) {
+    try {
+        await sequelize.authenticate();
+        console.log('Connection has been established successfully.');
+        } catch (error) {
+        console.error('Unable to connect to the database:', error);
+        }    
     next(createError(404));
 });
 
@@ -51,5 +60,6 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
+
 
 module.exports = app;
