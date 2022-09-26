@@ -72,5 +72,16 @@
         "city": "",
         "zip": "",
         "password": "$2b$11$ngDzS9W9w87C6ydawxbjvusUnHO.a.K53NK9h.XWNE38XJbA2hggG"
+    },
+    {
+        "NomeCompleto": "admin4",
+        "email": "admin2@gmail.com",
+        "CadPessoaFisica": "12345678900",
+        "DataNascimento": "1990-09-05",
+        "phone": "21123456789",
+        "address": "lua",
+        "city": "linda",
+        "zip": "12345678",
+        "password": "$2b$11$3F3QV5ZJsG/BRxnLY1BBSeYVhId2vizuwCDoRzhsHqRmy3qusZv5e"
     }
 ]

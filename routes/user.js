@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controller/userController');
-const xablau = require('../middleware/isAuthUser')
+const auth = require('../middleware/isAuthUser')
 
 const validacaoCadastro = require('../middleware/validacaoCadastro');
 //const controller = require(); //
@@ -10,10 +10,11 @@ const validacaoCadastro = require('../middleware/validacaoCadastro');
 router.get('/login', userController.login)
 router.post('/login', userController.auth)
 router.get('/cadastro', userController.renderCadastro)
-router.post('/cadastro', userController.cadastro)
-router.get('/usuario', xablau, userController.usuario)
+//router.post('/cadastro', userController.cadastro)
+router.get('/usuario', auth, userController.usuario)
 router.post('/cadastro', userController.salvar)
 
+router.delete('/deletar/:id', userController.destroy)
 
 
 
