@@ -2,6 +2,8 @@ const fs = require("fs");
 const usersJson = require('../users.json')
 const bcrypt = require('bcrypt')
 const url = require('url')
+const { Usuario } = require('../database/models')
+const Sequelize = require('sequelize')
 
 const userController = {
     renderCadastro: (req, res) => {
@@ -19,21 +21,37 @@ const userController = {
         return res.redirect('/user/login')
     },
 
-    salvar: async(req, res) =>{
-        const {nome, email, cpf, data, tele, senha, endereco } = req.body
+    salvar: async (req, res) => {
+        const { nome, email, cpf, data, tele, senha, endereco } = req.body
 
-        const resultSave = await Usuario.create ({
+        const resultSave = await Usuario.create({
             nome,
             email,
             cpf,
             data,
             tele,
             senha,
-            
-        
+
+
         })
     },
-
+    alterar: async (req, res) => {
+        const { nome, email, cpf, data, tele, senha, endereco } = req.body
+        const resultAlterar = await Usuario.update({
+            nome,
+            email,
+            cpf,
+            data,
+            tele,
+            senha,
+        },
+            {
+                where: { id }
+            },
+            ).then(result => {
+                res.status(200).json(result)
+            })
+    },
     login: (req, res) => {
         res.render('login')
     },
