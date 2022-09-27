@@ -65,11 +65,9 @@ const userController = {
         },
             {
                 where: { id }
-            },
-            ).then(result => {
-                res.status(200).json(result)
             })
-    },
+    return res.redirect('/user/cadastro')
+},
     login: (req, res) => {
         res.render('login')
     },

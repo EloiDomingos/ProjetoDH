@@ -10,7 +10,7 @@
 <body>
     <%- include('./partials/header') %>
 
-    <div class="retorno"> <span><a href="/home">← Página Inicial</a></span> <span> < perfil</span>  </div>
+    <div class="retorno"> <span><a href="/honodme">← Página Inicial</a></span> <span> < perfil</span>  </div>
     <h1>Dados Pessoais</h1>
     <div id="container1">
     <div class="infosContainer">
@@ -23,7 +23,7 @@
         <div><b>CEP</b><p><%= userData.zip %></p></div>
     </div>  
     <div id="boton">
-        <form action="/user/editar/<%=usuario.id_usuario%>?_method=PUT" method="POST">
+        <form href="/user/editar">
             <button>Editar Meus Dados</button>
         </form>
         <form action="/user/deletar/<%= userData.id%>?_method=DELETE" method="post">

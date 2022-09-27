@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario</title>
+    <link rel="stylesheet" href="/stylesheets/cadastro.css">
+</head>
+
+<body>
+
+    <%- include('./partials/header') %>
+
+
+    <div class="principal"> 
+
+        <div class = form-header>
+            <h1 class = "title">Editar Cadastro</h1>
+            <h2 class="title2">Dados Pessoais</h2>
+        </div>
+        
+        <div class="inicioform">
+            <form action="/user/editar/<%=usuario.id_usuario%>?_method=PUT" method="POST" id="registerForm">
+                <div class = "input-group">
+
+                    <div class = "inputs">
+                        <label for="NomeCompleto">Nome Completo</label>
+                        <input id ="NomeCompleto" type="text" 
+                        name="NomeCompleto" value="<%= usuario.nome %>" placeholder="Digite seu nome completo" >
+                    </div>
+
+                    <div class = "inputs">
+                        <label for="Email">E-mail</label>
+                        <input id ="Email" type="email" 
+                        name="email" placeholder="Digite seu e-mail" value="<%= usuario.email %>">
+                    </div>
+
+                    <div class = "inputs">
+                        <label for="CadPessoaFisica">CPF</label>
+                        <input id ="CadPessoaFisica" type="text" 
+                        name="CadPessoaFisica" placeholder="Digite o seu CPF" value="<%= usuario.CadPessoaFisica %>">
+                    </div>
+
+                    <div class = "inputs">
+                        <label for="DataNascimento">Data de Nascimento</label>
+                        <input id ="DataNascimento" type="date" 
+                        name="DataNascimento" placeholder="Digite a sua data de nascimento" value="<%= usuario.DataNascimento %>">
+                    </div>
+
+                    <div class = "inputs">
+                        <label for="phone">Telefone (apenas números)</label>
+                        <input id ="phone" type="tel" 
+                        name="phone" placeholder="Ex: (21)12345-6789" pattern="[0-9]+ " value="<%= usuario.phone %>">
+                    </div>
+
+                    <div class = "inputs">
+                        <label for="address">Endereço</label>
+                        <input id ="address" type="text" 
+                        name="address" placeholder="Digite seu endereço" value="<%= usuario.address %>">
+                    </div>    
+
+                    <div class = "inputs">
+                        <label for="city">Cidade</label>
+                        <input id ="city" type="text" 
+                        name="city" placeholder="Ex: Brasília" value="<%= usuario.city %>">
+                    </div>
+                    
+                    <div class = "inputs">
+                        <label for="zip">CEP (apenas números)</label>
+                        <input id ="zip" type="text" 
+                        name="zip" placeholder="Ex: 12345-678" pattern="[0-9]+" value="<%= usuario.zip %>">
+                    </div>    
+
+                    <div class = "inputs">
+                        <label for="SenhaCad">Senha</label>
+                        <input id ="SenhaCad" type="password" 
+                        name="password" placeholder="Digite a sua senha" value="<%= usuario.SenhaCad %>">
+                    </div>    
+                </div>
+            </form>
+        </div>
+            <button type="submit" form="registerForm" class="avancar-boton">Avançar</button>
+    </div>
+
+	<%- include('./partials/footer') %>
+    
+</body>
+
+</html>
