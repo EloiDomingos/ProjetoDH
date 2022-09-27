@@ -23,7 +23,7 @@
         <div><b>CEP</b><p><%= userData.zip %></p></div>
     </div>  
     <div id="boton">
-        <form href="/user/editar">
+        <form action="/user/editar/">
             <button>Editar Meus Dados</button>
         </form>
         <form action="/user/deletar/<%= userData.id%>?_method=DELETE" method="post">
