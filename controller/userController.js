@@ -45,7 +45,15 @@ const userController = {
         const addResult = await Endereco.create (addPayload)
         return res.redirect('/user/login')
     },
+    editar: async (req, res)=>{
+        const {id} = req.params;
+
+        const usuario = await Usuario.findByPk(id);
+
+        return res.render ('editarUsuario', {usuario})
+    },
     alterar: async (req, res) => {
+        const {id} = req.params;
         const {NomeCompleto, email, CadPessoaFisica, DataNascimento, phone, password, address, city, zip } = req.body
         const resultAlterar = await Usuario.update({
             nome,

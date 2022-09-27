@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session = require('express-session');
 const sequelize = require('sequelize');
-const methodOverride = require('method-override')
+const methodOverride = require('method-override');
 
 //importa as rotas
 const homeRouter = require('./routes/index');

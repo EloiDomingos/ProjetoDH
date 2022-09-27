@@ -23,7 +23,9 @@
         <div><b>CEP</b><p><%= userData.zip %></p></div>
     </div>  
     <div id="boton">
-        <button>Editar Meus Dados</button>
+        <form action="/user/editar/<%=usuario.id_usuario%>?_method=PUT" method="POST">
+            <button>Editar Meus Dados</button>
+        </form>
         <form action="/user/deletar/<%= userData.id%>?_method=DELETE" method="post">
             <button>Excluir Minha Conta</button>
         </form>

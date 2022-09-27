@@ -13,7 +13,8 @@ router.get('/cadastro', userController.renderCadastro)
 //router.post('/cadastro', userController.cadastro)
 router.get('/usuario', auth, userController.usuario)
 router.post('/cadastro', userController.salvar)
-router.patch('/editar/:id', userController.alterar)
+router.get('/editar/:id', userController.editar)
+router.put('/editar/:id', userController.alterar)
 
 router.delete('/deletar/:id', userController.destroy)
 
