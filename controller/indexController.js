@@ -37,6 +37,7 @@ const beerList = [{
 
 const indexController ={
     home: (req,res)=>{
+        console.log(req.session)
         res.render('home',{ cerva: beerList })
     },
     sobreNos: (req,res)=>{

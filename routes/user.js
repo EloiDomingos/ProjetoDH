@@ -9,10 +9,15 @@ const validacaoCadastro = require('../middleware/validacaoCadastro');
 
 router.get('/login', userController.login)
 router.post('/login', userController.auth)
+router.post('/logout', userController.logout)
+
+
 router.get('/cadastro', userController.renderCadastro)
-//router.post('/cadastro', userController.cadastro)
-router.get('/usuario', auth, userController.usuario)
 router.post('/cadastro', userController.salvar)
+//router.post('/cadastro', userController.cadastro) < rota antiga
+
+router.get('/usuario', auth, userController.usuario)
+
 router.get('/editar/:id', userController.editar)
 router.put('/editar/:id', userController.alterar)
 

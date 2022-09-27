@@ -22,66 +22,67 @@
         </div>
         
         <div class="inicioform">
-            <form action="/user/editar/<%=usuario.id_usuario%>?_method=PUT" method="POST" id="registerForm">
+            <form action="/user/editar/<%=usuario.id%>?_method=PUT" method="POST" id="registerForm">
                 <div class = "input-group">
 
                     <div class = "inputs">
-                        <label for="NomeCompleto">Nome Completo</label>
-                        <input id ="NomeCompleto" type="text" 
-                        name="NomeCompleto" value="<%= usuario.nome %>" placeholder="Digite seu nome completo" >
+                        <label for="nome">Nome Completo</label>
+                        <input id ="nome" type="text" 
+                        name="nome" value="<%= usuario.name %>" placeholder="Digite seu nome completo" >
                     </div>
 
                     <div class = "inputs">
-                        <label for="Email">E-mail</label>
+                        <label for="email">E-mail</label>
                         <input id ="Email" type="email" 
-                        name="email" placeholder="Digite seu e-mail" value="<%= usuario.email %>">
+                        name="email" placeholder="Digite seu e-mail" value="<%= email %>">
                     </div>
 
                     <div class = "inputs">
-                        <label for="CadPessoaFisica">CPF</label>
-                        <input id ="CadPessoaFisica" type="text" 
-                        name="CadPessoaFisica" placeholder="Digite o seu CPF" value="<%= usuario.CadPessoaFisica %>">
+                        <label for="cpf">CPF</label>
+                        <input id ="cpf" type="text" 
+                        name="cpf" placeholder="Digite o seu CPF" value="<%= usuario.cpf %>">
                     </div>
 
                     <div class = "inputs">
-                        <label for="DataNascimento">Data de Nascimento</label>
-                        <input id ="DataNascimento" type="date" 
-                        name="DataNascimento" placeholder="Digite a sua data de nascimento" value="<%= usuario.DataNascimento %>">
+                        <label for="data">Data de Nascimento</label>
+                        <input id ="data" type="date" 
+                        name="data" placeholder="Digite a sua data de nascimento" value="<%= usuario.dna %>">
                     </div>
 
                     <div class = "inputs">
-                        <label for="phone">Telefone (apenas números)</label>
-                        <input id ="phone" type="tel" 
-                        name="phone" placeholder="Ex: (21)12345-6789" pattern="[0-9]+ " value="<%= usuario.phone %>">
+                        <label for="tele">Telefone (apenas números)</label>
+                        <input id ="tele" type="tel" 
+                        name="tele" placeholder="Ex: (21)12345-6789" pattern="[0-9]+" value="<%= usuario.phone %>">
                     </div>
 
                     <div class = "inputs">
-                        <label for="address">Endereço</label>
-                        <input id ="address" type="text" 
-                        name="address" placeholder="Digite seu endereço" value="<%= usuario.address %>">
+                        <label for="endereco">Endereço</label>
+                        <input id ="endereco" type="text" 
+                        name="endereco" placeholder="Digite seu endereço" value="<%= usuario.add %>">
                     </div>    
 
                     <div class = "inputs">
-                        <label for="city">Cidade</label>
-                        <input id ="city" type="text" 
-                        name="city" placeholder="Ex: Brasília" value="<%= usuario.city %>">
+                        <label for="cidade">Cidade</label>
+                        <input id ="cidade" type="text" 
+                        name="cidade" placeholder="Ex: Brasília" value="<%= usuario.city %>">
                     </div>
                     
                     <div class = "inputs">
-                        <label for="zip">CEP (apenas números)</label>
-                        <input id ="zip" type="text" 
-                        name="zip" placeholder="Ex: 12345-678" pattern="[0-9]+" value="<%= usuario.zip %>">
+                        <label for="cep">CEP (apenas números)</label>
+                        <input id ="cep" type="text" 
+                        name="cep" placeholder="Ex: 12345-678" pattern="[0-9]+" value="<%= usuario.zip %>">
                     </div>    
 
                     <div class = "inputs">
-                        <label for="SenhaCad">Senha</label>
-                        <input id ="SenhaCad" type="password" 
-                        name="password" placeholder="Digite a sua senha" value="<%= usuario.SenhaCad %>">
+                        <label for="senha">Senha</label>
+                        <input id ="senha" type="password" 
+                        name="senha" placeholder="Crie nova senha">
                     </div>    
                 </div>
+                <button type="submit" form="registerForm" class="avancar-boton">Avançar</button>
             </form>
         </div>
-            <button type="submit" form="registerForm" class="avancar-boton">Avançar</button>
+            
     </div>
 
 	<%- include('./partials/footer') %>

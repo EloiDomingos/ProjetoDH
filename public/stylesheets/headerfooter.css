@@ -94,6 +94,10 @@ article .buscador{
     font-size: 1rem;
     padding: 0px 5px;
 }
+#logout{
+    margin-left: 5px;
+    background-color: #3c96e4
+}
 
 /*Fim do header*/
 /*Início do Footer*/

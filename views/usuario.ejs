@@ -8,9 +8,35 @@
     <title>Dev's Beer</title>
 </head>
 <body>
-    <%- include('./partials/header') %>
+    <header>
+        <link rel="stylesheet" href="/stylesheets/headerfooter.css">
+        <article class="containerBlack">
+            <div class="logo">
+                <h1>Dev's Beer</h1>
+            </div>
+            <div class="botoes">
+                <a href="/user/usuario"><button>Entrar</button></a>
+                <form action="/user/logout" method="post">
+                    <button type="submit" id="logout">Logout</button>
+                </form>
+                <a href="/shop/carrinho"><img src="/imagens/carrinho-de-compras.svg"></a>
+            </div>
+        </article>
+        <article class="containerBlue">
+            <nav>
+                <ul class="menu">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/home/sobrenos">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <div class="buscador">
+                <input type="search" id="busca" name="s" placeholder="buscar...">
+                <button>buscar</button>
+            </div>
+        </article>
+    </header>
 
-    <div class="retorno"> <span><a href="/honodme">← Página Inicial</a></span> <span> < perfil</span>  </div>
+    <div class="retorno"> <span><a href="/home">← Página Inicial</a></span> <span> < perfil</span>  </div>
     <h1>Dados Pessoais</h1>
     <div id="container1">
     <div class="infosContainer">
@@ -23,9 +49,9 @@
         <div><b>CEP</b><p><%= userData.zip %></p></div>
     </div>  
     <div id="boton">
-        <form action="/user/editar/">
+        <a href="/user/editar/<%=userData.id%>">
             <button>Editar Meus Dados</button>
-        </form>
+        </a>
         <form action="/user/deletar/<%= userData.id%>?_method=DELETE" method="post">
             <button>Excluir Minha Conta</button>
         </form>
