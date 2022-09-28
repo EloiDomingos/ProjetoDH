@@ -11,16 +11,11 @@ html {
 	height:100%;
 }
 
-a{
-    cursor: pointer;
-}
-button{
+a, button{
     cursor: pointer;
 }
 
 body {
-    margin: 0;
-	padding: 0;
 	display: flex;
 	flex-direction: column;
 	height:100%;
@@ -36,6 +31,7 @@ body {
 .imagemProdutoPreco img {
     width: 450px;
     height: 450px;
+    object-fit: cover;
 }
 
 .imagemProdutoPreco{
@@ -55,31 +51,24 @@ body {
 }
 .botaoQtdEadicionar p{
     padding-bottom: 15px;
+    font-size: inherit;
 }
 
 .qtdContainer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 1.6rem;
+    font-size: 2em;
+    padding-block-end: 4px;
 }
 
-.botaoQtdEadicionar button{
-    width: 213px;
-    height: 79px;
-    left: 650px;
-    top: 903px;
-    border-radius: 18px;
-}
-
-.newBotton{
+form{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
 }
-
-.newBotton button{
+form button{
 border: none;
-border-radius: 8px;
+border-radius: 0px 8px 8px 0px;
 background-color: #EF8408;
 color: white;
 font-weight: bold;
@@ -92,7 +81,7 @@ padding: 10px 20px;
 .numberQuantity{
     width: 50%;
     background: #FFFFFF;
-    border-radius: 18px;
+    border-radius: 8px 0px 0px 8px;
     font-size: 2rem;
     text-align: center;
     padding: 30px;
@@ -104,4 +93,14 @@ padding: 10px 20px;
     font-weight: 500;
     font-size: 24px;
     padding: 40px 57px;
+    line-height: 1.5;
+}
+.textoDescricaoProduto h2{
+    margin-bottom: 14px;
+}
+.upr-case{
+    text-transform: uppercase;
+}
+.bold{
+    font-weight: bold;
 }

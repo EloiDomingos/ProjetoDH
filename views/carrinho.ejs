@@ -1,65 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/carrinho.css">
-    <title>Document</title>
+    <title>Carrinho</title>
 </head>
 
 <body>
     <%- include('./partials/header') %>
-    <main>
-        <article class="carrinho">
-            <section class="listaProdutos">
-                <h2 class="tituloCarrinho">Carrinho de Compras</h2>
-                <ol class="produtosCarrinho">
-                    <div class="produto1">
-                        <li class="infoProduto"><img src="/imagens/heineken-66-cl.jpeg" alt="foto cerveja Heineken">
-                            <div class="descPreço"><p>Cerveja Heineken garrafa 600ml</p>
-                            <br>
-                                <p>R$ 15,00</p>
-                            <br>
-                            <div class="botoes">
-                                <button>adicionar</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="infoProduto"><img src="/imagens/Colorado.jpg" alt="foto cerveja Colorado">
-                        <div class="descPreço"><p>Cerveja Colorado garrafa 600ml</p>
-                        <br>
-                            <p>R$ 15,00</p>
-                        <br>
-                        <div class="botoes">
-                        <button>adicionar</button>
+        <main>
+            <article class="carrinho">
+                <section class="listaProdutos">
+                    <h2 class="tituloCarrinho">Carrinho de Compras</h2>
+                    <ul class="produtosCarrinho">
+                        <div class="produto1">
+                            <% for(let i=0; i < cart.length ;i++){ %>
+                                <li class="infoProduto"><img src="<%= cart[i].img %>"
+                                        alt="foto cerveja <%= cart[i].nome %>">
+                                    <div class="descPreco">
+                                        <p>Cerveja <%= cart[i].nome %> garrafa <%= cart[i].tamanho %>ml</p>
+                                        <p>R$ <%= cart[i].preco %>,00</p>
+                                    </div>
+                                </li>
+                                <%}%>
+                    </ul>
+                </section>
+                <section class="totalCarrinho">
+                    <h2>Total</h2>
+                    <p id="preco">R$ <%= totalPrice %>,00</p>
+                    <div class="botoes">
+                        <a href="/home"><button>Continuar Comprando</button></a>
+                        <a href="/shop/compra"><button>Finalizar Compra</button></a>
                     </div>
-                        </div>
-                        </li>
-                        <li class="infoProduto"><img src="/imagens/cerveja-colorado-appia-600ml_77132.jpg" alt="foto cerveja Colorado Apia">
-                            <div class="descPreço"><p>Cerveja Colorado Apia garrafa 600ml</p>
-                            <br>
-                                <p>R$ 15,00</p>
-                            <br>
-                            <div class="botoes">
-                            <button>adicionar</button>
-                        </div>
-                    </div>
-                            </li>
-                </ol>
-            </section>
-            <section class="totalCarrinho">
-                <h2>Total</h2>
-                <p>R$ 150,00</p>
-                <div class="botoes">
-                <a href="/home"><button>Continuar Comprando</button></a>
-                <br>
-                <a href="/shop/compra"><button>Finalizar Compra</button></a>
-            </div>
-            </section>
-        </article>       
+                </section>
+            </article>
 
-    </main>
-	<%- include('./partials/footer') %>
+        </main>
+        <%- include('./partials/footer') %>
 </body>
+
 </html>

@@ -23,8 +23,8 @@
 						<img src="<%= cerva[i].img %>" alt="garrafa de cerveja">
 					</div>
 					<div class="infoProd">
-						<p class="nomeC"><%= cerva[i].name %></p>
-						<p>Preço: R$<%= cerva[i].price %></p>
+						<p class="nomeC"><%= cerva[i].nome %></p>
+						<p>Preço: R$<%= cerva[i].preco %></p>
 						<a href= <%= `/shop/${cerva[i].id}` %> ><button>Adicionar</button></a>
 					</div>
 				</section>
@@ -42,9 +42,9 @@
 					<img src="<%= cerva[i].img %>" alt="garrafa de cerveja">
 				</div>
 				<div class="infoProd">
-					<p class="nomeC"><%= cerva[i].name %></p>
-					<p>Preço: R$<%= cerva[i].price %></p>
-					<button>Adicionar</button>
+					<p class="nomeC"><%= cerva[i].nome %></p>
+					<p>Preço: R$<%= cerva[i].preco %></p>
+					<a href= <%= `/shop/${cerva[i].id}` %> ><button>Adicionar</button></a>
 				</div>
 			</section>
 			<%}%>

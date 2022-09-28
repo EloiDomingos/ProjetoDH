@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,73 +10,63 @@
 </head>
 
 <body>
-    
+
     <%- include('./partials/header') %>
 
-    <main>
-        <article class="maininteira">
-        <article>
-        <section class="informacoes">
-            <h2>Informações de envio</h2>
-            <p>Fulano da Silva</p>
-            <p>Rua 123, Bairro Azul, nº24</p>
-            <p>Algum Lugar Bonito, 00000-000</p>
-            <button class="botaoselecionaroutro">selecionar outro endereço</button>
-        </section>
-        <section class="pagamento">
-            <h2>Método de Pagamento</h2>
-            <p>Fulano da Silva</p>
-            <p>123********23</p>
-            <p>Matercard</p>
-            <button class="botaoselecionaroutro">selecionar outro método de pagamento</button>
-        </section>
-        <section class="revisaoPedido">
-            <li class="infoProduto"><img class="imagemproduto" src="/imagens/heineken-66-cl.jpeg" alt="foto cerveja Heineken">
-                <div class="descPreço"><p>Cerveja Heineken garrafa 600ml</p>
-                <br>
-                    <p>R$ 15,00</p>
-                <br>
-                <div class="botoes">
-                    <button>adicionar</button>
-                </div>
-            </div>
-        </li>
-        <li class="infoProduto"><img class="imagemproduto" src="/imagens/Colorado.jpg" alt="foto cerveja Colorado">
-            <div class="descPreço"><p>Cerveja Colorado garrafa 600ml</p>
-            <br>
-                <p>R$ 15,00</p>
-            <br>
-            <div class="botoes">
-            <button>adicionar</button>
-        </div>
-            </div>
-            </li>
-            <li class="infoProduto"><img class="imagemproduto" src="/imagens/cerveja-colorado-appia-600ml_77132.jpg" alt="foto cerveja Colorado Apia">
-                <div class="descPreço"><p>Cerveja Colorado Apia garrafa 600ml</p>
-                <br>
-                    <p>R$ 15,00</p>
-                <br>
-                <div class="botoes">
-                <button>adicionar</button>
-            </div>
-        </div>
-                </li>
-    </ol>
-        </section>
-    </article>
-    <article>
-        <section class="totalCarrinho">
-            <h2>Total</h2>
-            <p>R$ 150,00</p>
-            <div class="botoes">
-            <button>Continuar Comprando</button>
-            <br>
-            <button>Finalizar Compra</button>
-        </div>
-        </section>
-    </article>
-</article>
-    </main>
-	<%- include('./partials/footer') %>
+        <main>
+            <article class="main">
+                <article id="left">
+                    <section class="info-card">
+                        <h2>Informações de envio</h2>
+                        <p>Fulano da Silva</p>
+                        <p>Rua 123, Bairro Azul, nº24</p>
+                        <p>Algum Lugar Bonito, 00000-000</p>
+                        <div class="botoes"><button>Selecionar outro endereço</button></div>
+                    </section>
+                    <section class="info-card">
+                        <h2>Método de Pagamento</h2>
+                        <p>Fulano da Silva</p>
+                        <p>123********23</p>
+                        <p>Matercard</p>
+                        <div class="botoes"><button>Selecionar outro método de pagamento</button></div>
+                    </section>
+                        <ul class="products">
+                            <li class="info-product"><img class="img-product" src="/imagens/heineken-66-cl.jpeg"
+                                    alt="foto cerveja Heineken">
+                                <div class="price">
+                                    <p class="b-name">Cerveja Heineken garrafa 600ml</p>
+                                    <p>R$ 15,00</p>
+                                </div>
+                            </li>
+                            <li class="info-product"><img class="img-product" src="/imagens/Colorado.jpg"
+                                    alt="foto cerveja Colorado">
+                                <div class="price">
+                                    <p class="b-name">Cerveja Colorado garrafa 600ml</p>
+                                    <p>R$ 15,00</p>
+                                </div>
+                            </li>
+                            <li class="info-product"><img class="img-product"
+                                    src="/imagens/cerveja-colorado-appia-600ml_77132.jpg" alt="foto cerveja Colorado Apia">
+                                <div class="price">
+                                    <p class="b-name">Cerveja Colorado Apia garrafa 600ml</p>
+                                    <p>R$ 15,00</p>
+                                </div>
+                            </li>
+                        </ul>
+                </article>
+                <article id="right">
+                    <section class="totalCarrinho">
+                        <h2>Total</h2>
+                        <p>R$ 150,00</p>
+                        <div class="botoes">
+                            <button>Continuar Comprando</button>
+                            <button>Finalizar Compra</button>
+                        </div>
+                    </section>
+                </article>
+            </article>
+        </main>
+        <%- include('./partials/footer') %>
 </body>
+
 </html>

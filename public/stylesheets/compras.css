@@ -6,50 +6,10 @@
     margin: 0;
 	padding: 0;
 }
-
 html {
 	height:100%;
 }
-
-.maininteira{
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-}
-
-.informacoes{
-    display: flex;
-    flex-direction: column;
-    border: #8F8169 solid 2px;
-    border-radius: 8px;
-    margin: 10px;
-    display: flex;
-    height: 200px;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    
-}
-
-.pagamento{
-        display: flex;
-        flex-direction: column;
-        border: #8F8169 solid 2px;
-        border-radius: 8px;
-        margin: 10px;
-        display: flex;
-        justify-content: space-between;
-        height: 200px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-left: 10px;
-}
-
-
-
-
-
+/* 
 .infoProduto{
     border: #8F8169 solid 2px;
     border-radius: 8px;
@@ -83,8 +43,83 @@ html {
     flex-grow: 1;
     justify-content: space-between;
 }
+ */
 
-.botaoselecionaroutro{
-    height: 40px;
-    margin: 5px;
+a, button{
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+#left{
+    max-width: 730px;
+}
+.info-card{
+    display: flex;
+    flex-direction: column;
+    border: #8F8169 solid 2px;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.info-card button {
+    width: 100%;
+}
+
+.info-product{
+    border: #8F8169 solid 2px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+}
+section:first-of-type{
+    margin-top: 0;
+}
+.img-product{
+    border-radius: 6px;
+    width: 250px;
+    height: 250px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.price p{
+    font-size: 2rem;
+}
+.price .b-name{
+    font-weight: bold;
+}
+#right{
+    flex-grow: 1;
+}
+.totalCarrinho{
+    border: #8F8169 2px solid;
+    max-height: 311px;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    position: sticky;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.totalCarrinho .botoes{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 14px;
 }

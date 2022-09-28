@@ -17,27 +17,26 @@
         </div>
         <article class="imagemProdutoPreco">
             <figure>
-                <img src="<%= product.img %>" alt="Imagem Cerveja <%= product.name %>">
+                <img src="<%= product.img %>" alt="Imagem Cerveja <%= product.nome %>">
             </figure>
             <section class="qtdContainer">
-                <h2><%= product.name %></h2>
-                <h2>R$ <%= product.price %></h2>
+                <h1 id="titulo"><%= product.nome %></h1>
+                <h3>R$ <%= product.preco %>,00</h3>
                 <div class="botaoQtdEadicionar"><p>Qntd:</p>
-                    <div class="newBotton">
-                            <input class="numberQuantity" type="number" id="quantity" name="quantity" min="1" max="10" value="1">
-                            <button>Adicionar</button>
-                    </div>
+                            <form action="/shop/comprar/<%= product.id %>" method="post">
+                                <input class="numberQuantity" type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                                <button>Adicionar</button>
+                            </form>
                 </div> 
             </section>
         </article>
         <section class="textoDescricaoProduto">
             <h2>Descrição Geral</h2>
-            <br>
-            <p>Cerveja Colorado Appia</p>
-            <p>Garrafa 600ml</p>
-            <br>
-            <p>INGREDIENTES: Cerveja, água, mel e leveduras.</p>
-            <p>ALERGÊNICOS: Contém trigo, cevada e glúten.</p>
+            <p class="upr-case bold"><%= product.nome %></p>
+            <p><span class="bold">GARRAFA:</span> <%= product.tamanho %>ml</p>
+            <p><span class="bold">MARCA:</span> <%= product.marca %></p>
+            <p><span class="bold">INGREDIENTES:</span> Cerveja, água, mel e leveduras.</p>
+            <p><span class="bold">ALERGÊNICOS:</span> Contém trigo, cevada e glúten.</p>
             <p>A palavra Appia vem do latim e significa mel. O nome perfeito para a primeira cerveja do Brasil a
                 utilizar mel em sua fórmula. Uma combinação exótica que, além do mel das flores das laranjeiras, é feita
                 a partir dos melhores maltes de cevada e trigo, além de nossa exclusiva levedura de alta fermentação.

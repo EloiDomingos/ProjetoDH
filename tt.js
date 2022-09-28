@@ -1,7 +1,8 @@
+const { Produto } = require('./database/models');
 const beerList = [{
     id: 1,
     name: 'Heineken',
-    price: 15.00,
+    price: 15,
     img: "/imagens/beer01.jpg"
 },
 {
@@ -34,20 +35,19 @@ const beerList = [{
     price: 20,
     img: "/imagens/cerveja-colorado-appia-600ml_77132.jpg"
 }]
-const { Produto } = require('../database/models');
-
-
-const indexController ={
-    home: async (req,res)=>{
-        const produtos = await Produto.findAll({
-            raw:true
+async function criandoProduto(){
+    for (let index = 0; index < beerList.length; index++) {
+        const element = beerList[index];
+        console.log(element)
+        const resultSave = await Produto.create({
+            nome:element.name,
+            preco:element.price,
+            tamanho: 500,
+            img:element.img,
+            marca: 'Devs',
+            tipo_id: 1
         })
-        res.render('home',{ cerva: produtos })
-    },
-    sobreNos: (req,res)=>{
-        res.render('sobreNos')
     }
-}
 
-
-module.exports = indexController
+};
+criandoProduto();

@@ -34,18 +34,46 @@ const beerList = [{
     price: 20,
     img: "/imagens/cerveja-colorado-appia-600ml_77132.jpg"
 }]
+const session = require('express-session');
+const { Produto } = require('../database/models');
 
 const shopController ={
-    produto: (req,res)=>{
+    produto: async (req,res)=>{
         const paramId = req.params.id;
-        const result = beerList.find(beer => beer.id == paramId);
+        const produtos = await Produto.findAll({
+            raw:true
+        })
+        const result = produtos.find(beer => beer.id == paramId);
         res.render('produto',{ product:result })
     },
-    carrinho: (req,res)=>{
-        res.render('carrinho')
+
+    carrinho: async (req,res)=>{
+        console.log(req.session.cart)
+        if(!req.session.cart){
+            req.session.cart = []
+        };
+        const totalPrice = req.session.cart.reduce((acc, product)=>{
+            return acc+product.preco*Number(product.qtd)
+        },0)
+        res.render('carrinho', {cart: req.session.cart, totalPrice})
     },
+
     compra: (req,res)=>{
         res.render('compra')
+    },
+    comprar: async (req,res) =>{
+        const product = await Produto.findByPk(req.params.id)
+        if(req.session.cart){
+            const productIndex = req.session.cart.map(p => p.id).indexOf(req.params.id)
+            if(productIndex === -1){
+                req.session.cart = req.session.cart.concat({...product.toJSON(), id:req.params.id,qtd:req.body.quantity})
+                return res.redirect('/shop/carrinho')
+            } 
+            req.session.cart[productIndex].qtd = req.body.quantity
+            return res.redirect('/shop/carrinho')
+        } 
+        req.session.cart = [{...product.toJSON(), id:req.params.id,qtd:req.body.quantity}]
+        return res.redirect('/shop/carrinho')
     }
 }
 

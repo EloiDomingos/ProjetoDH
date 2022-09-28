@@ -10,21 +10,20 @@
 html {
 	height:100%;
 }
-
 body {
-    margin: 0;
-	padding: 0;
 	display: flex;
 	flex-direction: column;
 	height:100%;
 }
-a{
+a, button{
     cursor: pointer;
 }
-button{
-    cursor: pointer;
+.retorno {
+    padding: 20px 57px;
+    font-size: 1.1rem;
+    font-weight: 100;
+    align-self: flex-start;
 }
-
 .principal{
     display: flex;
     flex-direction: column;
@@ -92,7 +91,7 @@ button{
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     text-align: center;
     text-decoration: none;
     margin: 35px 0px;
@@ -101,11 +100,14 @@ button{
 .avancar-boton a {
     width: 152px;
     height: 48px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
     text-decoration: none;
     color: #FFFFFF;
+}
+#registerForm{
+    display: flex;
+    flex-direction: column;
 }

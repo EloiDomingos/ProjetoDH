@@ -6,20 +6,13 @@
     margin: 0;
 	padding: 0;
 }
-
 html {
 	height:100%;
 }
-a{
+a, button{
     cursor: pointer;
 }
-button{
-    cursor: pointer;
-}
-
 body {
-    margin: 0;
-	padding: 0;
 	display: flex;
 	flex-direction: column;
 	height:100%;
@@ -38,7 +31,7 @@ body {
 }
 
 .tituloprincipal{
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 45px 0px;
     text-align: center;
 }
@@ -111,16 +104,11 @@ hr{
 .titulos{
     text-align: center;
     line-height: 2;
+    font-size: 1.4rem;
 }
 
-.titulo1{
-    font-size: 2rem;
-    line-height: 58px;
-    }
-
-.titulo2{
+.thin{
     font-weight: 400;
-    font-size: 2rem;
 }
 
 .botao2{

@@ -132,7 +132,7 @@ footer .footInfo h3{
     font-size: 2rem;
 }
 
-footer .footInfo a, p{
+.footInfo a, p{
     font-size: 1.5rem;
 }
 
