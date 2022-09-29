@@ -1,46 +1,47 @@
-const beerList = [{
-    id: 1,
-    name: 'Heineken',
-    price: 15.00,
-    img: "/imagens/beer01.jpg"
-},
-{
-    id: 2,
-    name: 'Colorado',
-    price: 20,
-    img: "/imagens/cerveja-colorado-appia-600ml_77132.jpg"
-},
-{
-    id: 3,
-    name: 'Heineken',
-    price: 15,
-    img: "/imagens/beer01.jpg"
-},
-{
-    id: 4,
-    name: 'Colorado',
-    price: 20,
-    img: "/imagens/cerveja-colorado-appia-600ml_77132.jpg"
-},
-{
-    id: 5,
-    name: 'Heineken',
-    price: 15,
-    img: "/imagens/beer01.jpg"
-},
-{
-    id: 6,
-    name: 'Colorado',
-    price: 20,
-    img: "/imagens/cerveja-colorado-appia-600ml_77132.jpg"
-}]
+// const beerList = [{
+//     id: 1,
+//     name: 'Heineken',
+//     price: 15.00,
+//     img: "/imagens/beer01.jpg"
+// },
+// {
+//     id: 2,
+//     name: 'Colorado',
+//     price: 20,
+//     img: "/imagens/cerveja-colorado-appia-600ml_77132.jpg"
+// },
+// {
+//     id: 3,
+//     name: 'Heineken',
+//     price: 15,
+//     img: "/imagens/beer01.jpg"
+// },
+// {
+//     id: 4,
+//     name: 'Colorado',
+//     price: 20,
+//     img: "/imagens/cerveja-colorado-appia-600ml_77132.jpg"
+// },
+// {
+//     id: 5,
+//     name: 'Heineken',
+//     price: 15,
+//     img: "/imagens/beer01.jpg"
+// },
+// {
+//     id: 6,
+//     name: 'Colorado',
+//     price: 20,
+//     img: "/imagens/cerveja-colorado-appia-600ml_77132.jpg"
+// }]
 const session = require('express-session');
-const { Produto } = require('../database/models');
+const { Produto, Tipo } = require('../database/models');
 
 const shopController ={
     produto: async (req,res)=>{
         const paramId = req.params.id;
         const produtos = await Produto.findAll({
+            include: [{model:Tipo, as:"produto_tipo"}],
             raw:true
         })
         const result = produtos.find(beer => beer.id == paramId);
@@ -58,9 +59,16 @@ const shopController ={
         res.render('carrinho', {cart: req.session.cart, totalPrice})
     },
 
-    compra: (req,res)=>{
-        res.render('compra')
+    compra: async (req,res)=>{
+        if(!req.session.cart){
+            req.session.cart = []
+        };
+        const totalPrice = req.session.cart.reduce((acc, product)=>{
+            return acc+product.preco*Number(product.qtd)
+        },0)
+        res.render('compra', {cart: req.session.cart, totalPrice})
     },
+
     comprar: async (req,res) =>{
         const product = await Produto.findByPk(req.params.id)
         if(req.session.cart){
@@ -74,6 +82,13 @@ const shopController ={
         } 
         req.session.cart = [{...product.toJSON(), id:req.params.id,qtd:req.body.quantity}]
         return res.redirect('/shop/carrinho')
+    },
+
+    esvasiar: (req,res) => {
+        if(req.session.cart){
+            req.session.cart = []
+            res.redirect('/shop/carrinho')
+        }
     }
 }
 

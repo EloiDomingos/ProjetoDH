@@ -11,7 +11,6 @@ router.get('/login', userController.login)
 router.post('/login', userController.auth)
 router.post('/logout', userController.logout)
 
-
 router.get('/cadastro', userController.renderCadastro)
 router.post('/cadastro',validacaoCadastro, userController.salvar)
 //router.post('/cadastro', userController.cadastro) < rota antiga

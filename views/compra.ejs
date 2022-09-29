@@ -31,35 +31,23 @@
                         <div class="botoes"><button>Selecionar outro método de pagamento</button></div>
                     </section>
                         <ul class="products">
-                            <li class="info-product"><img class="img-product" src="/imagens/heineken-66-cl.jpeg"
+                            <% for(let i=0; i < cart.length ;i++){ %>
+                            <li class="info-product"><img class="img-product" src="<%= cart[i].img %>"
                                     alt="foto cerveja Heineken">
                                 <div class="price">
-                                    <p class="b-name">Cerveja Heineken garrafa 600ml</p>
-                                    <p>R$ 15,00</p>
+                                    <p class="b-name">Cerveja <%= cart[i].nome %> garrafa <%= cart[i].tamanho %>ml</p>
+                                    <p>R$ <%= cart[i].preco %>,00</p>
                                 </div>
                             </li>
-                            <li class="info-product"><img class="img-product" src="/imagens/Colorado.jpg"
-                                    alt="foto cerveja Colorado">
-                                <div class="price">
-                                    <p class="b-name">Cerveja Colorado garrafa 600ml</p>
-                                    <p>R$ 15,00</p>
-                                </div>
-                            </li>
-                            <li class="info-product"><img class="img-product"
-                                    src="/imagens/cerveja-colorado-appia-600ml_77132.jpg" alt="foto cerveja Colorado Apia">
-                                <div class="price">
-                                    <p class="b-name">Cerveja Colorado Apia garrafa 600ml</p>
-                                    <p>R$ 15,00</p>
-                                </div>
-                            </li>
+                            <%}%>
                         </ul>
                 </article>
                 <article id="right">
                     <section class="totalCarrinho">
                         <h2>Total</h2>
-                        <p>R$ 150,00</p>
+                        <p>R$ <%= totalPrice %> ,00</p>
                         <div class="botoes">
-                            <button>Continuar Comprando</button>
+                            <a href="/home"><button id="width">Continuar Comprando</button></a>
                             <button>Finalizar Compra</button>
                         </div>
                     </section>

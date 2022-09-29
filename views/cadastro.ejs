@@ -28,55 +28,55 @@
                     <div class = "inputs">
                         <label for="NomeCompleto">Nome Completo</label>
                         <input id ="NomeCompleto" type="text" 
-                        name="NomeCompleto" placeholder="Digite seu nome completo">
+                        name="NomeCompleto" placeholder="Digite seu nome completo" required>
                     </div>
 
                     <div class = "inputs">
                         <label for="Email">E-mail</label>
                         <input id ="Email" type="email" 
-                        name="email" placeholder="Digite seu e-mail">
+                        name="email" placeholder="Digite seu e-mail" required>
                     </div>
 
                     <div class = "inputs">
                         <label for="CadPessoaFisica">CPF</label>
                         <input id ="CadPessoaFisica" type="text" 
-                        name="CadPessoaFisica" placeholder="Digite o seu CPF">
+                        name="CadPessoaFisica" placeholder="Digite o seu CPF" required minlength="11">
                     </div>
 
                     <div class = "inputs">
                         <label for="DataNascimento">Data de Nascimento</label>
                         <input id ="DataNascimento" type="date" 
-                        name="DataNascimento" placeholder="Digite a sua data de nascimento">
+                        name="DataNascimento" placeholder="Digite a sua data de nascimento" required>
                     </div>
 
                     <div class = "inputs">
                         <label for="phone">Telefone (apenas números)</label>
                         <input id ="phone" type="tel" 
-                        name="phone" placeholder="Ex: (21)12345-6789" pattern="[0-9]+">
+                        name="phone" placeholder="Ex: (21)12345-6789" pattern="[0-9]+"required minlength="11">
                     </div>
 
                     <div class = "inputs">
                         <label for="address">Endereço</label>
                         <input id ="address" type="text" 
-                        name="address" placeholder="Digite seu endereço">
+                        name="address" placeholder="Digite seu endereço"required>
                     </div>    
 
                     <div class = "inputs">
                         <label for="city">Cidade</label>
                         <input id ="city" type="text" 
-                        name="city" placeholder="Ex: Brasília">
+                        name="city" placeholder="Ex: Brasília"required>
                     </div>
                     
                     <div class = "inputs">
                         <label for="zip">CEP (apenas números)</label>
                         <input id ="zip" type="text" 
-                        name="zip" placeholder="Ex: 12345-678" pattern="[0-9]+">
+                        name="zip" placeholder="Ex: 12345-678" pattern="[0-9]+"required minlength="8">
                     </div>    
 
                     <div class = "inputs">
                         <label for="SenhaCad">Senha</label>
                         <input id ="SenhaCad" type="password" 
-                        name="password" placeholder="Digite a sua senha">
+                        name="password" placeholder="Digite a sua senha"required minlength="8">
                     </div>    
                 </div>
             </form>

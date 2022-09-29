@@ -123,3 +123,7 @@ section:first-of-type{
     font-size: 1.2rem;
     gap: 14px;
 }
+
+#width{
+    width: 100%;
+}
