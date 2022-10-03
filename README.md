@@ -71,7 +71,8 @@ Desk top
 ![desktop](https://user-images.githubusercontent.com/104717975/193378685-03dafb63-0865-46d3-b1b3-ccab2dbfc9f5.PNG)<br>
 
 Mobile <br>
-![mobile](https://user-images.githubusercontent.com/104717975/193378702-e6c270a7-0ac7-4b6c-b926-bfbef519ea17.PNG)
+![Mobile](https://user-images.githubusercontent.com/104717975/193699306-04349c32-4db4-4edb-b962-a9d58d5154e8.png)
+
 
 Orientadores: <br>
 | [<img src="https://avatars.githubusercontent.com/u/68913110?v=4" width=115><br><sub>Iago Nunes</sub>](https://github.com/iagoln) |  [<img src="https://avatars.githubusercontent.com/u/50021378?v=4" width=115><br><sub>Victor Pina Bergamini</sub>](https://github.com/vbergadev) |
