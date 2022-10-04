@@ -6,7 +6,7 @@ Projeto Integrador <br> Devs Beer
 
 ![Home](https://user-images.githubusercontent.com/104717975/193589775-44733fc5-5785-4e34-856b-a52969a43a72.PNG)
 
-Para Instalar:
+## Para Instalar:
 É Necessário ter:
 
 Node: <br>
@@ -15,12 +15,20 @@ https://nodejs.org/en/  <br>
 Npm: <br>
 https://www.npmjs.com/ <br>
 
+MySQL:
+https://www.mysql.com
+
+## Como Rodar a Aplicação
+
 1. Faça um clone do repositório <br>
 git clone https://github.com/RobsonFranco89/Grupo-2.git <br>
+
 2. Instale a dependência <br>
 npm install <br>
 
-* Tecnologias utilizadas 
+3. Rode o script do banco de dados no MySQL
+
+## Tecnologias utilizadas 
 - Javascript <br>
 - MySQL <br>
 - Html <br>
@@ -37,9 +45,8 @@ npm install <br>
 
 
 
-Descrição do projeto: <br> <br>
-Sobre o Projeto
-
+## Descrição do projeto: 
+<p align="justify">
 Devs Beer É um e-commerce voltado para o comércio de cervejaria , o projeto foi desenvolvido para uso do consumidor final, uma vez que ele possa escolher seus produtos definir seu orçamento e até mesmo solicitar entrega em seu endereço após término da compra.
 
 Produtos: 
@@ -66,6 +73,7 @@ O usúario efetuará o Login por meio do usuário e senha, que serão definidos 
 
 Preview
 todo o projeto foi planejado responsivamente pra dar uma total flexibilidade em todos os ambientes onde os usuários estiverem logados , tanto para Celulares , Tablets e Desk Top, Abaixo uma breve visão de como se comporta a tela em dispositivos diferentes.
+</p>
 
 Desk top
 ![desktop](https://user-images.githubusercontent.com/104717975/193378685-03dafb63-0865-46d3-b1b3-ccab2dbfc9f5.PNG)<br>
@@ -73,12 +81,11 @@ Desk top
 Mobile <br>
 ![Mobile](https://user-images.githubusercontent.com/104717975/193699306-04349c32-4db4-4edb-b962-a9d58d5154e8.png)
 
+## Desenvolvedores/Contribuintes:
 
 Orientadores: <br>
 | [<img src="https://avatars.githubusercontent.com/u/68913110?v=4" width=115><br><sub>Iago Nunes</sub>](https://github.com/iagoln) |  [<img src="https://avatars.githubusercontent.com/u/50021378?v=4" width=115><br><sub>Victor Pina Bergamini</sub>](https://github.com/vbergadev) |
 | :---: | :---: | 
-
-
 
 Desenvolvedores: <br>
 
